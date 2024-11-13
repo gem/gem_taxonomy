@@ -18,14 +18,14 @@ USAGE:
 
 # indexes for Summary sheet
 ATTRIBUTE_NAME_IDX = 0
-ATTRIBUTE_DESC_IDX = 1
+ATTRIBUTE_TITL_IDX = 1
 ATTRIBUTE_REFE_IDX = 2
-ATTRIBUTE_ATOMSGROUP_DESC_IDX = 3
+ATTRIBUTE_ATOMSGROUP_TITL_IDX = 3
 
 
 # indexes for attributes sheets
 ATOMSGROUP_NAME_IDX = 0
-ATOMSGROUP_DESC_IDX = 1
+ATOMSGROUP_TITL_IDX = 1
 ATOM_NAME_IDX = 2
 ATOM_TITL_IDX = 3
 ATOM_DESC_IDX = 4
@@ -75,17 +75,17 @@ if __name__ == '__main__':
                 ref_found = True
             continue
 
-        if row[ATTRIBUTE_ATOMSGROUP_DESC_IDX] == '':
+        if row[ATTRIBUTE_ATOMSGROUP_TITL_IDX] == '':
             break
 
         if row[ATTRIBUTE_NAME_IDX] != '':
             attribute_name = row[ATTRIBUTE_NAME_IDX]
-            attribute_desc = row[ATTRIBUTE_DESC_IDX]
+            attribute_titl = row[ATTRIBUTE_TITL_IDX]
 
             tax['Attribute'].append({
                 "prog": attribute_prog,
                 "name": attribute_name,
-                "desc": attribute_desc,
+                "title": attribute_titl,
                 })
 
             sheet_names.append(attribute_name)
@@ -97,7 +97,7 @@ if __name__ == '__main__':
         header=None, na_filter=None, sheet_name=sheet_names)
 
     atomsgroup_name = ''
-    atomsgroup_desc = ''
+    atomsgroup_titl = ''
     atomsgroup_prog = -100
     atom_prog = 0
     for sheet_name in sheet_names[1:]:
@@ -119,16 +119,16 @@ if __name__ == '__main__':
             atomsgroup_name = (atomsgroup_name
                                if row[ATOMSGROUP_NAME_IDX] == ''
                                else row[ATOMSGROUP_NAME_IDX])
-            atomsgroup_desc = (atomsgroup_desc
-                               if row[ATOMSGROUP_DESC_IDX] == ''
-                               else row[ATOMSGROUP_DESC_IDX])
+            atomsgroup_titl = (atomsgroup_titl
+                               if row[ATOMSGROUP_TITL_IDX] == ''
+                               else row[ATOMSGROUP_TITL_IDX])
             if row[ATOMSGROUP_NAME_IDX] != '':
                 atom_prog = 0
                 atomsgroup_prog += 100
                 tax['AtomsGroup'].append({
                     "prog": atomsgroup_prog,
                     "name": atomsgroup_name,
-                    "desc": atomsgroup_desc,
+                    "title": atomsgroup_titl,
                     "group": attribute_name
                 })
 

@@ -3,344 +3,344 @@
         {
             "prog": 0,
             "name": "material",
-            "desc": "Material of the Lateral Load-Resisting System"
+            "title": "Material of the Lateral Load-Resisting System"
         },
         {
             "prog": 100,
             "name": "llrs",
-            "desc": "Lateral Load-Resisting System"
+            "title": "Lateral Load-Resisting System"
         },
         {
             "prog": 200,
             "name": "height",
-            "desc": "Height"
+            "title": "Height"
         },
         {
             "prog": 300,
             "name": "dates",
-            "desc": "Date of Construction or Retrofit"
+            "title": "Date of Construction or Retrofit"
         },
         {
             "prog": 400,
             "name": "occupancy",
-            "desc": "Occupancy"
+            "title": "Occupancy"
         },
         {
             "prog": 500,
             "name": "shape",
-            "desc": "Shape of the Building Plan"
+            "title": "Shape of the Building Plan"
         },
         {
             "prog": 600,
             "name": "irregularity",
-            "desc": "Structural Irregularity"
+            "title": "Structural Irregularity"
         },
         {
             "prog": 700,
             "name": "hydrodynamics",
-            "desc": "Ground floor hydrodynamics"
+            "title": "Ground floor hydrodynamics"
         },
         {
             "prog": 800,
             "name": "ext_walls",
-            "desc": "Exterior Walls"
+            "title": "Exterior Walls"
         },
         {
             "prog": 900,
             "name": "roof",
-            "desc": "Roof"
+            "title": "Roof"
         },
         {
             "prog": 1000,
             "name": "floor",
-            "desc": "Floor"
+            "title": "Floor"
         },
         {
             "prog": 1100,
             "name": "foundation",
-            "desc": "Foundation System"
+            "title": "Foundation System"
         },
         {
             "prog": 1200,
             "name": "fire_prot",
-            "desc": "Fire protection"
+            "title": "Fire protection"
         }
     ],
     "AtomsGroup": [
         {
             "prog": 0,
             "name": "material_type",
-            "desc": "Material type",
+            "title": "Material type",
             "group": "material"
         },
         {
             "prog": 100,
             "name": "concrete_technology",
-            "desc": "Concrete technology",
+            "title": "Concrete technology",
             "group": "material"
         },
         {
             "prog": 200,
             "name": "steel_technology",
-            "desc": "Steel technology",
+            "title": "Steel technology",
             "group": "material"
         },
         {
             "prog": 300,
             "name": "metal_technology",
-            "desc": "Metal technology",
+            "title": "Metal technology",
             "group": "material"
         },
         {
             "prog": 400,
             "name": "masonry_technology",
-            "desc": "Masonry technology",
+            "title": "Masonry technology",
             "group": "material"
         },
         {
             "prog": 500,
             "name": "masonry_unit_type",
-            "desc": "Masonry unit type",
+            "title": "Masonry unit type",
             "group": "material"
         },
         {
             "prog": 600,
             "name": "earth_technology",
-            "desc": "Earth technology",
+            "title": "Earth technology",
             "group": "material"
         },
         {
             "prog": 700,
             "name": "wood_technology",
-            "desc": "Wood technology",
+            "title": "Wood technology",
             "group": "material"
         },
         {
             "prog": 800,
             "name": "mortar_type",
-            "desc": "Mortar type",
+            "title": "Mortar type",
             "group": "material"
         },
         {
             "prog": 900,
             "name": "stone_type",
-            "desc": "Stone type",
+            "title": "Stone type",
             "group": "material"
         },
         {
             "prog": 1000,
             "name": "masonry_reinforcement_type",
-            "desc": "Masonry reinforcement type",
+            "title": "Masonry reinforcement type",
             "group": "material"
         },
         {
             "prog": 1100,
             "name": "steel_connection_type",
-            "desc": "Steel connection type",
+            "title": "Steel connection type",
             "group": "material"
         },
         {
             "prog": 0,
             "name": "type_lateral_load",
-            "desc": "Type of lateral load-resisting system",
+            "title": "Type of lateral load-resisting system",
             "group": "llrs"
         },
         {
             "prog": 100,
             "name": "seismic_code_level",
-            "desc": "Seismic code level",
+            "title": "Seismic code level",
             "group": "llrs"
         },
         {
             "prog": 200,
             "name": "lateral_load_coefficient",
-            "desc": "Lateral load coefficient",
+            "title": "Lateral load coefficient",
             "group": "llrs"
         },
         {
             "prog": 300,
             "name": "system_ductility",
-            "desc": "System ductility",
+            "title": "System ductility",
             "group": "llrs"
         },
         {
             "prog": 400,
             "name": "columns_wall_density",
-            "desc": "Columns-Wall density",
+            "title": "Columns-Wall density",
             "group": "llrs"
         },
         {
             "prog": 0,
             "name": "number_of_storeys",
-            "desc": "Number of storeys",
+            "title": "Number of storeys",
             "group": "height"
         },
         {
             "prog": 100,
             "name": "height_structure_m",
-            "desc": "Height of structure (m)",
+            "title": "Height of structure (m)",
             "group": "height"
         },
         {
             "prog": 200,
             "name": "number_storeys_below",
-            "desc": "Number of storeys below ground",
+            "title": "Number of storeys below ground",
             "group": "height"
         },
         {
             "prog": 300,
             "name": "height_ground_floor",
-            "desc": "Height of ground floor above grade",
+            "title": "Height of ground floor above grade",
             "group": "height"
         },
         {
             "prog": 400,
             "name": "slope_the_ground",
-            "desc": "Slope of the ground (degrees)",
+            "title": "Slope of the ground (degrees)",
             "group": "height"
         },
         {
             "prog": 0,
             "name": "construction_completed_year",
-            "desc": "Construction completed (year)",
+            "title": "Construction completed (year)",
             "group": "dates"
         },
         {
             "prog": 100,
             "name": "physical_condition_maintenance",
-            "desc": "Physical condition / maintenance",
+            "title": "Physical condition / maintenance",
             "group": "dates"
         },
         {
             "prog": 0,
             "name": "building_occupancy_class",
-            "desc": "Building occupancy class",
+            "title": "Building occupancy class",
             "group": "occupancy"
         },
         {
             "prog": 0,
             "name": "plan_shape_footprint",
-            "desc": "Plan shape (footprint)",
+            "title": "Plan shape (footprint)",
             "group": "shape"
         },
         {
             "prog": 100,
             "name": "building_position_within",
-            "desc": "Building Position within a Block",
+            "title": "Building Position within a Block",
             "group": "shape"
         },
         {
             "prog": 0,
             "name": "regular_or_irregular",
-            "desc": "Regular or irregular",
+            "title": "Regular or irregular",
             "group": "irregularity"
         },
         {
             "prog": 100,
             "name": "plan_irregularities",
-            "desc": "Plan irregularities",
+            "title": "Plan irregularities",
             "group": "irregularity"
         },
         {
             "prog": 200,
             "name": "vertical_irregularities",
-            "desc": "Vertical irregularities",
+            "title": "Vertical irregularities",
             "group": "irregularity"
         },
         {
             "prog": 300,
             "name": "plan_irregularity",
-            "desc": "Plan irregularity",
+            "title": "Plan irregularity",
             "group": "irregularity"
         },
         {
             "prog": 400,
             "name": "vertical_irregularity",
-            "desc": "Vertical irregularity",
+            "title": "Vertical irregularity",
             "group": "irregularity"
         },
         {
             "prog": 0,
             "name": "ground_floor_hydrodynamics",
-            "desc": "Ground floor hydrodynamics",
+            "title": "Ground floor hydrodynamics",
             "group": "hydrodynamics"
         },
         {
             "prog": 0,
             "name": "material_exterior_walls",
-            "desc": "Material of exterior walls",
+            "title": "Material of exterior walls",
             "group": "ext_walls"
         },
         {
             "prog": 100,
             "name": "openings",
-            "desc": "Openings",
+            "title": "Openings",
             "group": "ext_walls"
         },
         {
             "prog": 200,
             "name": "windows_protection",
-            "desc": "Windows protection",
+            "title": "Windows protection",
             "group": "ext_walls"
         },
         {
             "prog": 0,
             "name": "roof_shape",
-            "desc": "Roof shape",
+            "title": "Roof shape",
             "group": "roof"
         },
         {
             "prog": 100,
             "name": "roof_covering_material",
-            "desc": "Roof covering material",
+            "title": "Roof covering material",
             "group": "roof"
         },
         {
             "prog": 200,
             "name": "roof_system_material",
-            "desc": "Roof system material",
+            "title": "Roof system material",
             "group": "roof"
         },
         {
             "prog": 300,
             "name": "roof_system_type",
-            "desc": "Roof system type",
+            "title": "Roof system type",
             "group": "roof"
         },
         {
             "prog": 400,
             "name": "roof_connections",
-            "desc": "Roof connections",
+            "title": "Roof connections",
             "group": "roof"
         },
         {
             "prog": 0,
             "name": "floor_system_material",
-            "desc": "Floor system material",
+            "title": "Floor system material",
             "group": "floor"
         },
         {
             "prog": 100,
             "name": "floor_system_type",
-            "desc": "Floor system type",
+            "title": "Floor system type",
             "group": "floor"
         },
         {
             "prog": 200,
             "name": "floor_connections",
-            "desc": "Floor connections",
+            "title": "Floor connections",
             "group": "floor"
         },
         {
             "prog": 0,
             "name": "foundation_system",
-            "desc": "Foundation System",
+            "title": "Foundation System",
             "group": "foundation"
         },
         {
             "prog": 0,
             "name": "fire_protection",
-            "desc": "Fire protection",
+            "title": "Fire protection",
             "group": "fire_prot"
         }
     ],
