@@ -27,13 +27,14 @@ ATTRIBUTE_ATOMSGROUP_DESC_IDX = 3
 ATOMSGROUP_NAME_IDX = 0
 ATOMSGROUP_DESC_IDX = 1
 ATOM_NAME_IDX = 2
-ATOM_DESC_IDX = 3
-ATOM_DEPS_IDX = 4
-ATOM_DEPS_EXA = 5
-ATOM_PROG_IDX = 6
-ATOM_TYPE_IDX = 7
-ATOM_ARGS_IDX = 8
-ATOM_PARAMS_IDX = 9
+ATOM_TITL_IDX = 3
+ATOM_DESC_IDX = 4
+ATOM_DEPS_IDX = 5
+ATOM_DEPS_EXA = 6
+ATOM_PROG_IDX = 7
+ATOM_TYPE_IDX = 8
+ATOM_ARGS_IDX = 9
+ATOM_PARAMS_IDX = 10
 
 #
 #  MAIN
@@ -109,10 +110,10 @@ if __name__ == '__main__':
         name_found = False
         for row in rows:
             if not name_found:
-                if row[ATOM_DESC_IDX].lower() == 'atom description':
+                if row[ATOM_TITL_IDX].lower() == 'atom title':
                     name_found = True
                 continue
-            if row[ATOM_DESC_IDX] == '':
+            if row[ATOM_TITL_IDX] == '':
                 break
 
             atomsgroup_name = (atomsgroup_name
@@ -132,6 +133,7 @@ if __name__ == '__main__':
                 })
 
             atom_name = row[ATOM_NAME_IDX]
+            atom_titl = row[ATOM_TITL_IDX]
             atom_desc = row[ATOM_DESC_IDX]
             atom_deps = row[ATOM_DEPS_IDX]
             atom_prog = row[ATOM_PROG_IDX]
@@ -142,6 +144,7 @@ if __name__ == '__main__':
             if ':' in atom_name:
                 param_atom = atom_name.split(':')[0]
                 param_name = ':'.join(atom_name.split(':')[1:])
+                param_titl = atom_titl
                 param_desc = atom_desc
                 param_prog = atom_prog
 
@@ -151,6 +154,7 @@ if __name__ == '__main__':
                     {
                         'atom': param_atom,
                         'name': param_name,
+                        'title': param_titl,
                         'desc': param_desc,
                         'prog': param_prog,
                     }
@@ -159,6 +163,7 @@ if __name__ == '__main__':
                 tax['Atom'].append({
                     "prog": atom_prog,
                     "name": atom_name,
+                    "title": atom_titl,
                     "desc": atom_desc,
                     "group": atomsgroup_name,
                     "attr": attribute_name,
