@@ -83,7 +83,7 @@ if __name__ == '__main__':
             attribute_titl = row[ATTRIBUTE_TITL_IDX]
 
             tax['Attribute'].append({
-                "prog": attribute_prog,
+                "prog": str(attribute_prog),
                 "name": attribute_name,
                 "title": attribute_titl,
                 })
@@ -126,7 +126,7 @@ if __name__ == '__main__':
                 atom_prog = 0
                 atomsgroup_prog += 100
                 tax['AtomsGroup'].append({
-                    "prog": atomsgroup_prog,
+                    "prog": str(atomsgroup_prog),
                     "name": atomsgroup_name,
                     "title": atomsgroup_titl,
                     "group": attribute_name
@@ -156,12 +156,12 @@ if __name__ == '__main__':
                         'name': param_name,
                         'title': param_titl,
                         'desc': param_desc,
-                        'prog': param_prog,
+                        'prog': str(param_prog),
                     }
                 )
             else:
                 tax['Atom'].append({
-                    "prog": atom_prog,
+                    "prog": str(atom_prog),
                     "name": atom_name,
                     "title": atom_titl,
                     "desc": atom_desc,
@@ -181,6 +181,12 @@ if __name__ == '__main__':
 
     tax['AtomType'] = taxmod_atom_type
     tax['AtomsDeps'] = taxmod_atom_deps
+
+    new_dict = {}
+    for k in ['Attribute', 'AtomsGroup', 'Atom']:
+        if 'name' in tax[k][0]:
+            new_dict[k + 'Dict'] = {x['name']: x for x in tax[k]}
+    tax.update(new_dict)
 
     with open('out/taxonomy3.3_standard.json', 'w') as f:
         json.dump(tax, f, indent=4)
