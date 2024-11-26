@@ -1520,7 +1520,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "1200",
@@ -1531,7 +1531,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "2600",
@@ -1553,7 +1553,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "3400",
@@ -1564,7 +1564,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "3800",
@@ -1575,7 +1575,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "4400",
@@ -1586,7 +1586,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "5500",
@@ -1597,7 +1597,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "6600",
@@ -1608,7 +1608,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "7000",
@@ -1919,7 +1919,7 @@
             "params": ""
         },
         {
-            "prog": "0",
+            "prog": "100",
             "name": "IRV",
             "title": "Vertical irregularities list container",
             "desc": "",
@@ -5521,7 +5521,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "COM": {
             "prog": "1200",
@@ -5532,7 +5532,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "MIX": {
             "prog": "2600",
@@ -5554,7 +5554,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "AGR": {
             "prog": "3400",
@@ -5565,7 +5565,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "GOV": {
             "prog": "3800",
@@ -5576,7 +5576,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "EDU": {
             "prog": "4400",
@@ -5587,7 +5587,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "HEA": {
             "prog": "5500",
@@ -5598,7 +5598,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "TRT": {
             "prog": "6600",
@@ -5609,7 +5609,7 @@
             "attr": "occupancy",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\"}"
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "OCO": {
             "prog": "7000",
@@ -5920,7 +5920,7 @@
             "params": ""
         },
         "IRV": {
-            "prog": "0",
+            "prog": "100",
             "name": "IRV",
             "title": "Vertical irregularities list container",
             "desc": "",
