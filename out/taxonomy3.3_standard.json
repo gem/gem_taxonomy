@@ -1457,17 +1457,6 @@
             "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
         },
         {
-            "prog": "100",
-            "name": "YPRE",
-            "title": "YPRE:n, Latest possible date of construction or retrofit",
-            "desc": "",
-            "group": "construction_completed_year",
-            "attr": "dates",
-            "type": "",
-            "args": "",
-            "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
-        },
-        {
             "prog": "200",
             "name": "YAPP",
             "title": "YAPP:n, Approximate date of construction or retrofit",
@@ -1487,7 +1476,7 @@
             "attr": "dates",
             "type": "",
             "args": "",
-            "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
+            "params": ""
         },
         {
             "prog": "100",
@@ -1498,7 +1487,7 @@
             "attr": "dates",
             "type": "",
             "args": "",
-            "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
+            "params": ""
         },
         {
             "prog": "200",
@@ -1509,7 +1498,7 @@
             "attr": "dates",
             "type": "",
             "args": "",
-            "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
+            "params": ""
         },
         {
             "prog": "0",
@@ -5457,17 +5446,6 @@
             "args": "",
             "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
         },
-        "YPRE": {
-            "prog": "100",
-            "name": "YPRE",
-            "title": "YPRE:n, Latest possible date of construction or retrofit",
-            "desc": "",
-            "group": "construction_completed_year",
-            "attr": "dates",
-            "type": "",
-            "args": "",
-            "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
-        },
         "YAPP": {
             "prog": "200",
             "name": "YAPP",
@@ -5488,7 +5466,7 @@
             "attr": "dates",
             "type": "",
             "args": "",
-            "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
+            "params": ""
         },
         "YMM": {
             "prog": "100",
@@ -5499,7 +5477,7 @@
             "attr": "dates",
             "type": "",
             "args": "",
-            "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
+            "params": ""
         },
         "YMG": {
             "prog": "200",
@@ -5510,7 +5488,7 @@
             "attr": "dates",
             "type": "",
             "args": "",
-            "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1\n}"
+            "params": ""
         },
         "RES": {
             "prog": "0",
