@@ -1272,8 +1272,8 @@
         {
             "prog": "0",
             "name": "LFC",
-            "title": "LFC:n, n is the lateral force coefficient in percentage (%)",
-            "desc": "",
+            "title": "Lateral load coefficient",
+            "desc": "LFC:n, n is the lateral force coefficient in percentage (%)",
             "group": "lateral_load_coefficient",
             "attr": "llrs",
             "type": "",
@@ -1338,8 +1338,8 @@
         {
             "prog": "0",
             "name": "DCW",
-            "title": "Float specifying the density or ratio between the area of columns and/or walls and the area of the building plan.\n(DCW <= 1)",
-            "desc": "",
+            "title": "Columns-Wall density",
+            "desc": "Float specifying the density or ratio between the area of columns and/or walls and the area of the building plan.",
             "group": "columns_wall_density",
             "attr": "llrs",
             "type": "",
@@ -1437,7 +1437,7 @@
         {
             "prog": "0",
             "name": "HD",
-            "title": "q",
+            "title": "Slope of the ground (n=float in degrees).",
             "desc": "HD:n",
             "group": "slope_the_ground",
             "attr": "height",
@@ -5262,8 +5262,8 @@
         "LFC": {
             "prog": "0",
             "name": "LFC",
-            "title": "LFC:n, n is the lateral force coefficient in percentage (%)",
-            "desc": "",
+            "title": "Lateral load coefficient",
+            "desc": "LFC:n, n is the lateral force coefficient in percentage (%)",
             "group": "lateral_load_coefficient",
             "attr": "llrs",
             "type": "",
@@ -5328,8 +5328,8 @@
         "DCW": {
             "prog": "0",
             "name": "DCW",
-            "title": "Float specifying the density or ratio between the area of columns and/or walls and the area of the building plan.\n(DCW <= 1)",
-            "desc": "",
+            "title": "Columns-Wall density",
+            "desc": "Float specifying the density or ratio between the area of columns and/or walls and the area of the building plan.",
             "group": "columns_wall_density",
             "attr": "llrs",
             "type": "",
@@ -5427,7 +5427,7 @@
         "HD": {
             "prog": "0",
             "name": "HD",
-            "title": "q",
+            "title": "Slope of the ground (n=float in degrees).",
             "desc": "HD:n",
             "group": "slope_the_ground",
             "attr": "height",
