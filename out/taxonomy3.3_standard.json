@@ -1278,7 +1278,7 @@
             "attr": "llrs",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"float\",\n            \"min\": 0.0,\n            \"min_incl\": true,\n            \"max\": 100.0,\n            \"max_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"%\", \"%\"]\n            }"
         },
         {
             "prog": "0",
@@ -1512,7 +1512,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "1200",
+            "prog": "1300",
             "name": "COM",
             "title": "Commercial and public",
             "desc": "",
@@ -1523,7 +1523,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "2600",
+            "prog": "2700",
             "name": "MIX",
             "title": "Mixed",
             "desc": "",
@@ -1534,7 +1534,7 @@
             "params": ""
         },
         {
-            "prog": "2700",
+            "prog": "2800",
             "name": "IND",
             "title": "Industrial",
             "desc": "",
@@ -1545,7 +1545,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "3400",
+            "prog": "3500",
             "name": "AGR",
             "title": "Agriculture",
             "desc": "",
@@ -1556,7 +1556,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "3800",
+            "prog": "3900",
             "name": "GOV",
             "title": "Government",
             "desc": "",
@@ -1567,7 +1567,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "4400",
+            "prog": "4500",
             "name": "EDU",
             "title": "Education",
             "desc": "",
@@ -1578,7 +1578,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "5500",
+            "prog": "5600",
             "name": "HEA",
             "title": "Healthcare",
             "desc": "",
@@ -1589,7 +1589,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "6600",
+            "prog": "6700",
             "name": "TRT",
             "title": "Transportation",
             "desc": "",
@@ -1600,7 +1600,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "7000",
+            "prog": "7100",
             "name": "OCO",
             "title": "Other occupancy type",
             "desc": "",
@@ -3240,6 +3240,13 @@
                 "title": "Mobile home",
                 "desc": "",
                 "prog": "1100"
+            },
+            {
+                "atom": "RES",
+                "name": "6",
+                "title": "Indigenous housing",
+                "desc": "",
+                "prog": "1200"
             }
         ],
         "COM": [
@@ -3248,91 +3255,91 @@
                 "name": "1",
                 "title": "Retail trade",
                 "desc": "",
-                "prog": "1300"
+                "prog": "1400"
             },
             {
                 "atom": "COM",
                 "name": "2",
                 "title": "Wholesale trade and storage (warehouse)",
                 "desc": "",
-                "prog": "1400"
+                "prog": "1500"
             },
             {
                 "atom": "COM",
                 "name": "3",
                 "title": "Offices, professional/technical services",
                 "desc": "",
-                "prog": "1500"
+                "prog": "1600"
             },
             {
                 "atom": "COM",
                 "name": "3A",
                 "title": "Financial and insurance activities",
                 "desc": "",
-                "prog": "1600"
+                "prog": "1700"
             },
             {
                 "atom": "COM",
                 "name": "3B",
                 "title": "Personal and Repair Services",
                 "desc": "",
-                "prog": "1700"
+                "prog": "1800"
             },
             {
                 "atom": "COM",
                 "name": "3C",
                 "title": "Hotels and motels",
                 "desc": "",
-                "prog": "1800"
+                "prog": "1900"
             },
             {
                 "atom": "COM",
                 "name": "4",
                 "title": "Covered parking garage",
                 "desc": "",
-                "prog": "1900"
+                "prog": "2000"
             },
             {
                 "atom": "COM",
                 "name": "5",
                 "title": "Entertainment and recreation",
                 "desc": "",
-                "prog": "2000"
+                "prog": "2100"
             },
             {
                 "atom": "COM",
                 "name": "5A",
                 "title": "Entertainment",
                 "desc": "",
-                "prog": "2100"
+                "prog": "2200"
             },
             {
                 "atom": "COM",
                 "name": "5B",
                 "title": "Recreation",
                 "desc": "",
-                "prog": "2200"
+                "prog": "2300"
             },
             {
                 "atom": "COM",
                 "name": "5C",
                 "title": "Religious gathering",
                 "desc": "",
-                "prog": "2300"
+                "prog": "2400"
             },
             {
                 "atom": "COM",
                 "name": "5D",
                 "title": "Arena",
                 "desc": "",
-                "prog": "2400"
+                "prog": "2500"
             },
             {
                 "atom": "COM",
                 "name": "5E",
                 "title": "Cinema, auditoriums or concert hall",
                 "desc": "",
-                "prog": "2500"
+                "prog": "2600"
             }
         ],
         "IND": [
@@ -3341,42 +3348,42 @@
                 "name": "1",
                 "title": "Heavy Industry Factories",
                 "desc": "",
-                "prog": "2800"
+                "prog": "2900"
             },
             {
                 "atom": "IND",
                 "name": "2",
                 "title": "Light Industry Factories",
                 "desc": "",
-                "prog": "2900"
+                "prog": "3000"
             },
             {
                 "atom": "IND",
                 "name": "3",
                 "title": "Food/Drugs/Chemicals Factories",
                 "desc": "",
-                "prog": "3000"
+                "prog": "3100"
             },
             {
                 "atom": "IND",
                 "name": "4",
                 "title": "Metals/Minerals Processing Factories",
                 "desc": "",
-                "prog": "3100"
+                "prog": "3200"
             },
             {
                 "atom": "IND",
                 "name": "5",
                 "title": "High Technology Labs/Factories",
                 "desc": "",
-                "prog": "3200"
+                "prog": "3300"
             },
             {
                 "atom": "IND",
                 "name": "6",
                 "title": "Construction Offices",
                 "desc": "",
-                "prog": "3300"
+                "prog": "3400"
             }
         ],
         "AGR": [
@@ -3385,21 +3392,21 @@
                 "name": "1",
                 "title": "Produce storage",
                 "desc": "",
-                "prog": "3500"
+                "prog": "3600"
             },
             {
                 "atom": "AGR",
                 "name": "2",
                 "title": "Animal shelter",
                 "desc": "",
-                "prog": "3600"
+                "prog": "3700"
             },
             {
                 "atom": "AGR",
                 "name": "3",
                 "title": "Agricultural processing",
                 "desc": "",
-                "prog": "3700"
+                "prog": "3800"
             }
         ],
         "GOV": [
@@ -3408,35 +3415,35 @@
                 "name": "1",
                 "title": "Government, general services",
                 "desc": "",
-                "prog": "3900"
+                "prog": "4000"
             },
             {
                 "atom": "GOV",
                 "name": "2",
                 "title": "Government, emergency response",
                 "desc": "",
-                "prog": "4000"
+                "prog": "4100"
             },
             {
                 "atom": "GOV",
                 "name": "2A",
                 "title": "Government, police station",
                 "desc": "",
-                "prog": "4100"
+                "prog": "4200"
             },
             {
                 "atom": "GOV",
                 "name": "2B",
                 "title": "Government, fire station",
                 "desc": "",
-                "prog": "4200"
+                "prog": "4300"
             },
             {
                 "atom": "GOV",
                 "name": "2C",
                 "title": "Government, emergency operation center",
                 "desc": "",
-                "prog": "4300"
+                "prog": "4400"
             }
         ],
         "EDU": [
@@ -3445,70 +3452,70 @@
                 "name": "1",
                 "title": "Pre-school facility",
                 "desc": "",
-                "prog": "4500"
+                "prog": "4600"
             },
             {
                 "atom": "EDU",
                 "name": "1A",
                 "title": "Day care center",
                 "desc": "",
-                "prog": "4600"
+                "prog": "4700"
             },
             {
                 "atom": "EDU",
                 "name": "1B",
                 "title": "Pre-school / Kindergarten",
                 "desc": "",
-                "prog": "4700"
+                "prog": "4800"
             },
             {
                 "atom": "EDU",
                 "name": "2",
                 "title": "School",
                 "desc": "",
-                "prog": "4800"
+                "prog": "4900"
             },
             {
                 "atom": "EDU",
                 "name": "2A",
                 "title": "Elementary/Primary school",
                 "desc": "",
-                "prog": "4900"
+                "prog": "5000"
             },
             {
                 "atom": "EDU",
                 "name": "2B",
                 "title": "Middle School",
                 "desc": "",
-                "prog": "5000"
+                "prog": "5100"
             },
             {
                 "atom": "EDU",
                 "name": "2C",
                 "title": "High/Secondary School",
                 "desc": "",
-                "prog": "5100"
+                "prog": "5200"
             },
             {
                 "atom": "EDU",
                 "name": "3",
                 "title": "College/university, offices and/or classrooms",
                 "desc": "",
-                "prog": "5200"
+                "prog": "5300"
             },
             {
                 "atom": "EDU",
                 "name": "4",
                 "title": "College/university, research facilities and/or labs",
                 "desc": "",
-                "prog": "5300"
+                "prog": "5400"
             },
             {
                 "atom": "EDU",
                 "name": "5",
                 "title": "Other schools",
                 "desc": "",
-                "prog": "5400"
+                "prog": "5500"
             }
         ],
         "HEA": [
@@ -3517,70 +3524,70 @@
                 "name": "1",
                 "title": "Hospital",
                 "desc": "",
-                "prog": "5600"
+                "prog": "5700"
             },
             {
                 "atom": "HEA",
                 "name": "1A",
                 "title": "Primary Level Hospital",
                 "desc": "",
-                "prog": "5700"
+                "prog": "5800"
             },
             {
                 "atom": "HEA",
                 "name": "B",
                 "title": "Secondary Level Hospital",
                 "desc": "",
-                "prog": "5800"
+                "prog": "5900"
             },
             {
                 "atom": "HEA",
                 "name": "C",
                 "title": "Tertiary Level Hospital",
                 "desc": "",
-                "prog": "5900"
+                "prog": "6000"
             },
             {
                 "atom": "HEA",
                 "name": "2",
                 "title": "Clinic",
                 "desc": "",
-                "prog": "6000"
+                "prog": "6100"
             },
             {
                 "atom": "HEA",
                 "name": "3",
                 "title": "Basic Health Unit",
                 "desc": "",
-                "prog": "6100"
+                "prog": "6200"
             },
             {
                 "atom": "HEA",
                 "name": "4",
                 "title": "Specialty Center",
                 "desc": "",
-                "prog": "6200"
+                "prog": "6300"
             },
             {
                 "atom": "HEA",
                 "name": "5",
                 "title": "Health Post",
                 "desc": "",
-                "prog": "6300"
+                "prog": "6400"
             },
             {
                 "atom": "HEA",
                 "name": "6",
                 "title": "Rehabilitation Center",
                 "desc": "",
-                "prog": "6400"
+                "prog": "6500"
             },
             {
                 "atom": "HEA",
                 "name": "7",
                 "title": "Other healthcare facilities",
                 "desc": "",
-                "prog": "6500"
+                "prog": "6600"
             }
         ],
         "TRT": [
@@ -3589,21 +3596,21 @@
                 "name": "1",
                 "title": "Bus station",
                 "desc": "",
-                "prog": "6700"
+                "prog": "6800"
             },
             {
                 "atom": "TRT",
                 "name": "2",
                 "title": "Railway station",
                 "desc": "",
-                "prog": "6800"
+                "prog": "6900"
             },
             {
                 "atom": "TRT",
                 "name": "3",
                 "title": "Airport",
                 "desc": "",
-                "prog": "6900"
+                "prog": "7000"
             }
         ]
     },
@@ -5268,7 +5275,7 @@
             "attr": "llrs",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"float\",\n            \"min\": 0.0,\n            \"min_incl\": true,\n            \"max\": 100.0,\n            \"max_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"%\", \"%\"]\n            }"
         },
         "DNO": {
             "prog": "0",
@@ -5502,7 +5509,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "COM": {
-            "prog": "1200",
+            "prog": "1300",
             "name": "COM",
             "title": "Commercial and public",
             "desc": "",
@@ -5513,7 +5520,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "MIX": {
-            "prog": "2600",
+            "prog": "2700",
             "name": "MIX",
             "title": "Mixed",
             "desc": "",
@@ -5524,7 +5531,7 @@
             "params": ""
         },
         "IND": {
-            "prog": "2700",
+            "prog": "2800",
             "name": "IND",
             "title": "Industrial",
             "desc": "",
@@ -5535,7 +5542,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "AGR": {
-            "prog": "3400",
+            "prog": "3500",
             "name": "AGR",
             "title": "Agriculture",
             "desc": "",
@@ -5546,7 +5553,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "GOV": {
-            "prog": "3800",
+            "prog": "3900",
             "name": "GOV",
             "title": "Government",
             "desc": "",
@@ -5557,7 +5564,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "EDU": {
-            "prog": "4400",
+            "prog": "4500",
             "name": "EDU",
             "title": "Education",
             "desc": "",
@@ -5568,7 +5575,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "HEA": {
-            "prog": "5500",
+            "prog": "5600",
             "name": "HEA",
             "title": "Healthcare",
             "desc": "",
@@ -5579,7 +5586,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "TRT": {
-            "prog": "6600",
+            "prog": "6700",
             "name": "TRT",
             "title": "Transportation",
             "desc": "",
@@ -5590,7 +5597,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "OCO": {
-            "prog": "7000",
+            "prog": "7100",
             "name": "OCO",
             "title": "Other occupancy type",
             "desc": "",

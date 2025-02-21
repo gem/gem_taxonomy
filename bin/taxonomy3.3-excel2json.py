@@ -83,7 +83,7 @@ if __name__ == '__main__':
             attribute_titl = row[ATTRIBUTE_TITL_IDX]
 
             tax['Attribute'].append({
-                "prog": str(attribute_prog),
+                "prog": str(int(float(attribute_prog))),
                 "name": attribute_name,
                 "title": attribute_titl,
                 })
@@ -126,7 +126,7 @@ if __name__ == '__main__':
                 atom_prog = 0
                 atomsgroup_prog += 100
                 tax['AtomsGroup'].append({
-                    "prog": str(atomsgroup_prog),
+                    "prog": str(int(float(atomsgroup_prog))),
                     "name": atomsgroup_name,
                     "title": atomsgroup_titl,
                     "group": attribute_name
@@ -156,12 +156,12 @@ if __name__ == '__main__':
                         'name': param_name,
                         'title': param_titl,
                         'desc': param_desc,
-                        'prog': str(param_prog),
+                        'prog': str(int(float(param_prog))),
                     }
                 )
             else:
                 tax['Atom'].append({
-                    "prog": str(atom_prog),
+                    "prog": str(int(float(atom_prog))),
                     "name": atom_name,
                     "title": atom_titl,
                     "desc": atom_desc,
