@@ -297,18 +297,12 @@
         },
         {
             "prog": "200",
-            "name": "roof_system_material",
-            "title": "Roof system material",
+            "name": "roof_type",
+            "title": "Roof type",
             "group": "roof"
         },
         {
             "prog": "300",
-            "name": "roof_system_type",
-            "title": "Roof system type",
-            "group": "roof"
-        },
-        {
-            "prog": "400",
             "name": "roof_connections",
             "title": "Roof connections",
             "group": "roof"
@@ -2517,275 +2511,77 @@
             "name": "RM",
             "title": "Masonry",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "100",
+            "prog": "400",
             "name": "RE",
             "title": "Earthen",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "200",
+            "prog": "600",
             "name": "RC",
             "title": "Concrete",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
-        },
-        {
-            "prog": "300",
-            "name": "RME",
-            "title": "Metal or steel",
-            "desc": "",
-            "group": "roof_system_material",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "400",
-            "name": "RWO",
-            "title": "Wood",
-            "desc": "",
-            "group": "roof_system_material",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "500",
-            "name": "RFA",
-            "title": "Fabric",
-            "desc": "",
-            "group": "roof_system_material",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "600",
-            "name": "RO",
-            "title": "Roof material, other",
-            "desc": "",
-            "group": "roof_system_material",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "0",
-            "name": "RM1",
-            "title": "Vaulted masonry",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "100",
-            "name": "RM2",
-            "title": "Shallow-arched masonry",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "200",
-            "name": "RM3",
-            "title": "Composite masonry and concrete roof system",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "300",
-            "name": "RE1",
-            "title": "Vaulted earthen roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "400",
-            "name": "RC1",
-            "title": "Cast-in-place beamless reinforced concrete roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "500",
-            "name": "RC2",
-            "title": "Cast-in-place  beam-supported reinforced concrete roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "600",
-            "name": "RC3",
-            "title": "Precast concrete roof with reinforced concrete topping",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "700",
-            "name": "RC4",
-            "title": "Precast concrete roof without reinforced concrete topping",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "800",
-            "name": "RME1",
-            "title": "Metal or steel beams or trusses supporting light roofing",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "900",
-            "name": "RME2",
-            "title": "Metal or steel beams supporting precast concrete slabs",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "1000",
-            "name": "RME3",
-            "title": "Composite steel deck and concrete slab",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "1100",
-            "name": "RWO1",
-            "title": "Wooden structurewith light roof covering",
+            "name": "RME",
+            "title": "Metal or steel",
             "desc": "",
-            "group": "roof_system_type",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
-        },
-        {
-            "prog": "1200",
-            "name": "RWO2",
-            "title": "Wooden beams or trusses with  heavy roof covering",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "1300",
-            "name": "RWO3",
-            "title": "Wood-based sheets on rafters or purlins",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "1400",
-            "name": "RWO4",
-            "title": "Plywood panels or other light-weight panels for roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "1500",
-            "name": "RWO5",
-            "title": "Bamboo, straw or thatch roof",
+            "name": "RWO",
+            "title": "Wood",
             "desc": "",
-            "group": "roof_system_type",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "1600",
-            "name": "RFA1",
-            "title": "Inflatable or tensile membrane roof",
+            "prog": "2100",
+            "name": "RFA",
+            "title": "Fabric",
             "desc": "",
-            "group": "roof_system_type",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "1700",
-            "name": "RFAO",
-            "title": "Fabric, other",
+            "prog": "2400",
+            "name": "RO",
+            "title": "Roof material, other",
             "desc": "",
-            "group": "roof_system_type",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
             "prog": "0",
@@ -3612,6 +3408,144 @@
                 "desc": "",
                 "prog": "7000"
             }
+        ],
+        "RM": [
+            {
+                "atom": "RM",
+                "name": "1",
+                "title": "Vaulted masonry",
+                "desc": "",
+                "prog": "100"
+            },
+            {
+                "atom": "RM",
+                "name": "2",
+                "title": "Shallow-arched masonry",
+                "desc": "",
+                "prog": "200"
+            },
+            {
+                "atom": "RM",
+                "name": "3",
+                "title": "Composite masonry and concrete roof system",
+                "desc": "",
+                "prog": "300"
+            }
+        ],
+        "RE": [
+            {
+                "atom": "RE",
+                "name": "1",
+                "title": "Vaulted earthen roof",
+                "desc": "",
+                "prog": "500"
+            }
+        ],
+        "RC": [
+            {
+                "atom": "RC",
+                "name": "1",
+                "title": "Cast-in-place beamless reinforced concrete roof",
+                "desc": "",
+                "prog": "700"
+            },
+            {
+                "atom": "RC",
+                "name": "2",
+                "title": "Cast-in-place  beam-supported reinforced concrete roof",
+                "desc": "",
+                "prog": "800"
+            },
+            {
+                "atom": "RC",
+                "name": "3",
+                "title": "Precast concrete roof with reinforced concrete topping",
+                "desc": "",
+                "prog": "900"
+            },
+            {
+                "atom": "RC",
+                "name": "4",
+                "title": "Precast concrete roof without reinforced concrete topping",
+                "desc": "",
+                "prog": "1000"
+            }
+        ],
+        "RME": [
+            {
+                "atom": "RME",
+                "name": "1",
+                "title": "Metal or steel beams or trusses supporting light roofing",
+                "desc": "",
+                "prog": "1200"
+            },
+            {
+                "atom": "RME",
+                "name": "2",
+                "title": "Metal or steel beams supporting precast concrete slabs",
+                "desc": "",
+                "prog": "1300"
+            },
+            {
+                "atom": "RME",
+                "name": "3",
+                "title": "Composite steel deck and concrete slab",
+                "desc": "",
+                "prog": "1400"
+            }
+        ],
+        "RWO": [
+            {
+                "atom": "RWO",
+                "name": "1",
+                "title": "Wooden structurewith light roof covering",
+                "desc": "",
+                "prog": "1600"
+            },
+            {
+                "atom": "RWO",
+                "name": "2",
+                "title": "Wooden beams or trusses with  heavy roof covering",
+                "desc": "",
+                "prog": "1700"
+            },
+            {
+                "atom": "RWO",
+                "name": "3",
+                "title": "Wood-based sheets on rafters or purlins",
+                "desc": "",
+                "prog": "1800"
+            },
+            {
+                "atom": "RWO",
+                "name": "4",
+                "title": "Plywood panels or other light-weight panels for roof",
+                "desc": "",
+                "prog": "1900"
+            },
+            {
+                "atom": "RWO",
+                "name": "5",
+                "title": "Bamboo, straw or thatch roof",
+                "desc": "",
+                "prog": "2000"
+            }
+        ],
+        "RFA": [
+            {
+                "atom": "RFA",
+                "name": "1",
+                "title": "Inflatable or tensile membrane roof",
+                "desc": "",
+                "prog": "2200"
+            },
+            {
+                "atom": "RFA",
+                "name": "O",
+                "title": "Fabric, other",
+                "desc": "",
+                "prog": "2300"
+            }
         ]
     },
     "AtomsDeps": {
@@ -3897,60 +3831,6 @@
             "WOL",
             "WOM",
             "WOS"
-        ],
-        "RM1": [
-            "RM"
-        ],
-        "RM2": [
-            "RM"
-        ],
-        "RM3": [
-            "RM"
-        ],
-        "RE1": [
-            "RE"
-        ],
-        "RC1": [
-            "RC"
-        ],
-        "RC2": [
-            "RC"
-        ],
-        "RC3": [
-            "RC"
-        ],
-        "RC4": [
-            "RC"
-        ],
-        "RME1": [
-            "RME"
-        ],
-        "RME2": [
-            "RME"
-        ],
-        "RME3": [
-            "RME"
-        ],
-        "RWO1": [
-            "RWO"
-        ],
-        "RWO2": [
-            "RWO"
-        ],
-        "RWO3": [
-            "RWO"
-        ],
-        "RWO4": [
-            "RWO"
-        ],
-        "RWO5": [
-            "RWO"
-        ],
-        "RFA1": [
-            "RFA"
-        ],
-        "RFAO": [
-            "RFA"
         ],
         "FM1": [
             "FM"
@@ -4292,20 +4172,14 @@
             "title": "Roof covering material",
             "group": "roof"
         },
-        "roof_system_material": {
+        "roof_type": {
             "prog": "200",
-            "name": "roof_system_material",
-            "title": "Roof system material",
-            "group": "roof"
-        },
-        "roof_system_type": {
-            "prog": "300",
-            "name": "roof_system_type",
-            "title": "Roof system type",
+            "name": "roof_type",
+            "title": "Roof type",
             "group": "roof"
         },
         "roof_connections": {
-            "prog": "400",
+            "prog": "300",
             "name": "roof_connections",
             "title": "Roof connections",
             "group": "roof"
@@ -6514,275 +6388,77 @@
             "name": "RM",
             "title": "Masonry",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "RE": {
-            "prog": "100",
+            "prog": "400",
             "name": "RE",
             "title": "Earthen",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "RC": {
-            "prog": "200",
+            "prog": "600",
             "name": "RC",
             "title": "Concrete",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "RME": {
-            "prog": "300",
+            "prog": "1100",
             "name": "RME",
             "title": "Metal or steel",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "RWO": {
-            "prog": "400",
+            "prog": "1500",
             "name": "RWO",
             "title": "Wood",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "RFA": {
-            "prog": "500",
+            "prog": "2100",
             "name": "RFA",
             "title": "Fabric",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "RO": {
-            "prog": "600",
+            "prog": "2400",
             "name": "RO",
             "title": "Roof material, other",
             "desc": "",
-            "group": "roof_system_material",
+            "group": "roof_type",
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": ""
-        },
-        "RM1": {
-            "prog": "0",
-            "name": "RM1",
-            "title": "Vaulted masonry",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RM2": {
-            "prog": "100",
-            "name": "RM2",
-            "title": "Shallow-arched masonry",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RM3": {
-            "prog": "200",
-            "name": "RM3",
-            "title": "Composite masonry and concrete roof system",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RE1": {
-            "prog": "300",
-            "name": "RE1",
-            "title": "Vaulted earthen roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RC1": {
-            "prog": "400",
-            "name": "RC1",
-            "title": "Cast-in-place beamless reinforced concrete roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RC2": {
-            "prog": "500",
-            "name": "RC2",
-            "title": "Cast-in-place  beam-supported reinforced concrete roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RC3": {
-            "prog": "600",
-            "name": "RC3",
-            "title": "Precast concrete roof with reinforced concrete topping",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RC4": {
-            "prog": "700",
-            "name": "RC4",
-            "title": "Precast concrete roof without reinforced concrete topping",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RME1": {
-            "prog": "800",
-            "name": "RME1",
-            "title": "Metal or steel beams or trusses supporting light roofing",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RME2": {
-            "prog": "900",
-            "name": "RME2",
-            "title": "Metal or steel beams supporting precast concrete slabs",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RME3": {
-            "prog": "1000",
-            "name": "RME3",
-            "title": "Composite steel deck and concrete slab",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RWO1": {
-            "prog": "1100",
-            "name": "RWO1",
-            "title": "Wooden structurewith light roof covering",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RWO2": {
-            "prog": "1200",
-            "name": "RWO2",
-            "title": "Wooden beams or trusses with  heavy roof covering",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RWO3": {
-            "prog": "1300",
-            "name": "RWO3",
-            "title": "Wood-based sheets on rafters or purlins",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RWO4": {
-            "prog": "1400",
-            "name": "RWO4",
-            "title": "Plywood panels or other light-weight panels for roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RWO5": {
-            "prog": "1500",
-            "name": "RWO5",
-            "title": "Bamboo, straw or thatch roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RFA1": {
-            "prog": "1600",
-            "name": "RFA1",
-            "title": "Inflatable or tensile membrane roof",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "RFAO": {
-            "prog": "1700",
-            "name": "RFAO",
-            "title": "Fabric, other",
-            "desc": "",
-            "group": "roof_system_type",
-            "attr": "roof",
-            "type": "",
-            "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "RWCN": {
             "prog": "0",
