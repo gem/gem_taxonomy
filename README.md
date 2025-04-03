@@ -1,27 +1,28 @@
 # GEM BUILDING TAXONOMY
 
-This repository host the latest information regarding the GEM Taxonomy.
+The GEM Building Taxonomy is a uniform classification scheme, a method to describe and categorize buildings in the same way across the globe as a key step towards assessing their vulnerability and risk. The taxonomy provides a language model that characterizes assets according to attributes that can influence the likelihood of damage due to the effects of natural hazards.
 
-A building taxonomy (GEM Building Taxonomy) characterizes assets according to attributes that can influence the likelihood of damage due to the effects of natural hazards.  This taxonomy contained 13 building attributes, including the main material of construction, lateral load-resisting system, date of construction and number of storeys.
+The `GEM Builnding taxonomy v3.3` contains 13 building attributes, including the main material of construction, lateral load-resisting system, date of construction and number of storeys. This repository provides the spreadsheets with the latest attributes.
 
-![taxonomy_v3.2](figures/taxonomy_v3.2.png)
+[Taxonomy_tables_v3.3.xlsx](./Taxonomy_tables_v3.3.xlsx)
+
+![taxonomy_v3.3](figures/taxonomy_v3.2.png)
 
 
 ## Applications
-- [TaxTweb](https://platform.openquake.org/taxtweb/)
+- [Taxonomy validation and explanation](https://platform.openquake.org/taxtweb/)
 
-![taxtweb](figures/taxtweb.png)
+- [Taxonomy gragh](https://taxonomy-v3.vpn.openquake.org/taxonomy/graph/)
 
+- [Taxonomy structure](https://taxonomy-v3.vpn.openquake.org/taxonomy/attribute/)
 
 - [Taxonomy Glossary](https://taxonomy.openquake.org/)
 
 ![taxonomy_glossary](figures/taxonomy_glossary.png)
 
-- [IDCT - Inventory Data Capture Tool](https://play.google.com/store/apps/details?id=org.globalquakemodel.org.idctdo&hl=es_CO&gl=US)
-
-![IDCT](figures/IDCT.png)
-
 
 ## Documentation
-- GEM Taxonomy v2.0
-- GED4ALL Taxonomy (GEM Taxonomy v3.0)
+
+- Silva, V., Brzev, S., Scawthorn, C. et al. A Building Classification System for Multi-hazard Risk Assessment. Int J Disaster Risk Sci 13, 161–177 (2022). https://doi.org/10.1007/s13753-022-00400-x
+- GED4ALL Taxonomy (GEM Taxonomy v3.0). [Global Exposure Database for Multi-Hazard Risk Analysis-Multi-hazard Exposure Taxonomy](https://www.globalquakemodel.org/gempublications/global-exposure-database-for-multi-hazard-risk-analysis-multi-hazard-exposure-taxonomy)
+- [GEM Building Taxonomy v2.0](https://www.globalquakemodel.org/gempublications/gem-building-taxonomy-version-2.0)
