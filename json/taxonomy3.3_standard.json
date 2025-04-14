@@ -2333,7 +2333,7 @@
         {
             "prog": "600",
             "name": "RSH7",
-            "title": " Curved",
+            "title": "Curved",
             "desc": "",
             "group": "roof_shape",
             "attr": "roof",
@@ -2592,7 +2592,7 @@
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
+            "params": ""
         },
         {
             "prog": "0",
@@ -3509,7 +3509,7 @@
             {
                 "atom": "RWO",
                 "name": "1",
-                "title": "Wooden structurewith light roof covering",
+                "title": "Wooden structure with light roof covering",
                 "desc": "",
                 "prog": "1600"
             },
@@ -6221,7 +6221,7 @@
         "RSH7": {
             "prog": "600",
             "name": "RSH7",
-            "title": " Curved",
+            "title": "Curved",
             "desc": "",
             "group": "roof_shape",
             "attr": "roof",
@@ -6480,7 +6480,7 @@
             "attr": "roof",
             "type": "",
             "args": "",
-            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
+            "params": ""
         },
         "RWCN": {
             "prog": "0",

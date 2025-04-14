@@ -188,5 +188,5 @@ if __name__ == '__main__':
             new_dict[k + 'Dict'] = {x['name']: x for x in tax[k]}
     tax.update(new_dict)
 
-    with open('out/taxonomy3.3_standard.json', 'w') as f:
+    with open('json/taxonomy3.3_standard.json', 'w') as f:
         json.dump(tax, f, indent=4)
