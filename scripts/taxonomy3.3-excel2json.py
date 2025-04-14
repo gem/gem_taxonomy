@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+#
+# Copyright (C) 2024-2025 GEM Foundation
+#
+# The program is distributed under the terms
+# of the GNU Affero General Public License Vers. 3
+#
+# https://www.gnu.org/licenses/agpl-3.0.en.html
+#
+
 import sys
 import json
 import pandas
