@@ -8,7 +8,7 @@ The `GEM Building taxonomy v3.3` contains 13 building attributes, including the 
 [Taxonomy_tables_v3.3.xlsx](./Taxonomy_tables_v3.3.xlsx)
 
 
-![taxonomy_v3.3](figures/taxonomy_v3.2.png)
+![taxonomy_v3.3](figures/taxonomy_v3.3.png)
 
 
 ## Applications
