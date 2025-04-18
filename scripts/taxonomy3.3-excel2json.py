@@ -180,6 +180,11 @@ if __name__ == '__main__':
                     "args": atom_args,
                     "params": atom_parms,
                 })
+                if atom_parms != '':
+                    parms_obj = json.loads(atom_parms)
+                    if parms_obj['type'] == 'options':
+                        if atom_name not in tax['Param']:
+                            tax['Param'][atom_name] = []
 
             if atom_type:
                 taxmod_atom_type[atom_name] = atom_type
