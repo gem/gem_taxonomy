@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+#
+# Copyright (C) 2024-2025 GEM Foundation
+#
+# The program is distributed under the terms
+# of the GNU Affero General Public License Vers. 3
+#
+# https://www.gnu.org/licenses/agpl-3.0.en.html
+#
+
 import sys
 import json
 import pandas
@@ -193,5 +202,5 @@ if __name__ == '__main__':
             new_dict[k + 'Dict'] = {x['name']: x for x in tax[k]}
     tax.update(new_dict)
 
-    with open('out/taxonomy3.3_standard.json', 'w') as f:
+    with open('json/taxonomy3.3_standard.json', 'w') as f:
         json.dump(tax, f, indent=4)
