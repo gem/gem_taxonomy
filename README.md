@@ -10,7 +10,9 @@ The `GEM Building taxonomy v3.3` contains 13 building attributes, including the 
 
 ![taxonomy_v3.3](figures/taxonomy_v3.3.png)
 
-
+<!--
+  -- Comment out Applications section for now 
+  -- TODO bring this comment 
 ## Applications
 
 If you would like to validate a taxonomy string or gain a better understanding of its meaning, you can use the [Taxonomy validation and explanation tool](https://taxonomy.openquake.org).
@@ -27,6 +29,7 @@ Additional resources for exploring and working with the taxonomy include:
 
 ![taxonomy_glossary](figures/taxonomy_glossary.png)
 
+-->
 
 ## Documentation
 
