@@ -13,6 +13,7 @@ The `GEM Building taxonomy v3.3` contains 13 building attributes, including the 
 ## Applications
 
 If you would like to validate a taxonomy string or gain a better understanding of its meaning, you can use the [Taxonomy validation and explanation tool](https://tools.openquake.org/taxonomy/).
+![Taxonomy tool](figures/taxonomy_tool.png)
 
 For engineers and scientists working with the taxonomy for model or tool development, a Python package is available at https://github.com/gem/oq-gem-taxonomy. This package allows you to validate taxonomy strings, get a dictionary with the attributes and provides detailed explanations for each attribute within the given taxonomy.
 
