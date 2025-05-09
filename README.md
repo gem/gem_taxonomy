@@ -25,7 +25,7 @@ Additional resources for exploring and working with the taxonomy include:
 
 - [Taxonomy Glossary](https://taxonomy.openquake.org/) – A comprehensive glossary to help you understand the terminology used within the taxonomy.
 
-![taxonomy_glossary](figures/taxonomy_glossary.png)
+![taxonomy_glossary](figures/glossary-lfinf.png)
 
 
 ## Documentation
