@@ -10,26 +10,23 @@ The `GEM Building taxonomy v3.3` contains 13 building attributes, including the 
 
 ![taxonomy_v3.3](figures/taxonomy_v3.3.png)
 
-<!--
-  -- Comment out Applications section for now 
-  -- TODO bring this comment 
 ## Applications
 
-If you would like to validate a taxonomy string or gain a better understanding of its meaning, you can use the [Taxonomy validation and explanation tool](https://taxonomy.openquake.org).
+If you would like to validate a taxonomy string or gain a better understanding of its meaning, you can use the [Taxonomy validation and explanation tool](https://tools.openquake.org/taxonomy/).
+![Taxonomy tool](figures/taxonomy_tool.png)
 
 For engineers and scientists working with the taxonomy for model or tool development, a Python package is available at https://github.com/gem/oq-gem-taxonomy. This package allows you to validate taxonomy strings, get a dictionary with the attributes and provides detailed explanations for each attribute within the given taxonomy.
 
 Additional resources for exploring and working with the taxonomy include:
 
-- [Taxonomy graph](https://taxonomy-v3.vpn.openquake.org/taxonomy/graph/) – Visualize the relationships within the taxonomy.
+- [Taxonomy graph](https://tools.openquake.org/taxonomy/graph) – Visualize the relationships within the taxonomy.
 
-- [Taxonomy structure](https://taxonomy-v3.vpn.openquake.org/taxonomy/attribute/) – Explore the detailed structure and attributes of the taxonomy.
+- [Taxonomy structure](https://tools.openquake.org/taxonomy/structure/attribute/) – Explore the detailed structure and attributes of the taxonomy.
 
 - [Taxonomy Glossary](https://taxonomy.openquake.org/) – A comprehensive glossary to help you understand the terminology used within the taxonomy.
 
-![taxonomy_glossary](figures/taxonomy_glossary.png)
+![taxonomy_glossary](figures/glossary-lfinf.png)
 
--->
 
 ## Documentation
 
