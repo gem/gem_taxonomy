@@ -50,6 +50,10 @@ ATOM_PARAMS_IDX = 10
 #
 if __name__ == '__main__':
     tax = {
+        '_comment': (
+            'This file is licensed under Creative Commons Attribution'
+            ' Share Alike 4.0 International. See DATA_LICENSE file for'
+            ' details.'),
         'Attribute': [],
         'AtomsGroup': [],
         'Atom': [],

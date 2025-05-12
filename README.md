@@ -33,3 +33,10 @@ Additional resources for exploring and working with the taxonomy include:
 - [2022]: A Building Classification System for Multi-hazard Risk Assessment (Silva et al. 2022). International Journal for Disaster Risk Science. https://doi.org/10.1007/s13753-022-00400-x
 - [2018]: GED4ALL Taxonomy (GEM Taxonomy v3.0). [Global Exposure Database for Multi-Hazard Risk Analysis-Multi-hazard Exposure Taxonomy](https://www.globalquakemodel.org/gempublications/global-exposure-database-for-multi-hazard-risk-analysis-multi-hazard-exposure-taxonomy). Extension to GED4All Taxonomy for multi-hazard risk assessment.
 - [2013]: [GEM Building Taxonomy v2.0](https://www.globalquakemodel.org/gempublications/gem-building-taxonomy-version-2.0). Initial version of the GEM Building Taxonomy for seismic risk assessment.
+
+## Licensing
+
+- **Code**: Licensed under the [GNU Affero General Public License v3.0](./LICENSE).
+- **Data**: Licensed under the [Creative Commons Attribution Share Alike 4.0 International](./DATA_LICENSE).
+
+Please refer to the respective license files for more details.
