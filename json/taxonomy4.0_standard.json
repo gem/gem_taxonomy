@@ -1445,7 +1445,7 @@
             "attr": "eq_design",
             "type": "",
             "args": "",
-            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\"]\n}"
+            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         {
             "prog": "0",
@@ -1456,7 +1456,7 @@
             "attr": "eq_design",
             "type": "",
             "args": "",
-            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\"]\n}"
+            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         {
             "prog": "0",
@@ -5592,7 +5592,7 @@
             "attr": "eq_design",
             "type": "",
             "args": "",
-            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\"]\n}"
+            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         "PGAS": {
             "prog": "0",
@@ -5603,7 +5603,7 @@
             "attr": "eq_design",
             "type": "",
             "args": "",
-            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\"]\n}"
+            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         "CNP": {
             "prog": "0",
