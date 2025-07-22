@@ -8,6 +8,7 @@
 # https://www.gnu.org/licenses/agpl-3.0.en.html
 #
 
+import os
 import sys
 import json
 import pandas
@@ -49,6 +50,8 @@ ATOM_PARAMS_IDX = 10
 #  MAIN
 #
 if __name__ == '__main__':
+    taxonomy_vers = os.path.basename(sys.argv[0][18:][0:-14])
+
     tax = {
         '_comment': (
             'This file is licensed under Creative Commons Attribution'
@@ -63,7 +66,7 @@ if __name__ == '__main__':
     }
 
     #
-    #   Taxonomy v3.3
+    #   Taxonomy Specification File
     #
     infile_name = sys.argv[1]
 
@@ -121,7 +124,7 @@ if __name__ == '__main__':
         atomsgroup_prog = -100
 
         name_found = False
-        for row in rows:
+        for idx, row in enumerate(rows):
             if not name_found:
                 if row[ATOM_TITL_IDX].lower() == 'atom title':
                     name_found = True
@@ -173,6 +176,10 @@ if __name__ == '__main__':
                     }
                 )
             else:
+                if atom_prog == '':
+                    print('Tab: %s, Row: %s' %(sheet_name, idx),
+                          file=sys.stderr)
+                    sys.exit(1)
                 tax['Atom'].append({
                     "prog": str(int(float(atom_prog))),
                     "name": atom_name,
@@ -206,5 +213,5 @@ if __name__ == '__main__':
             new_dict[k + 'Dict'] = {x['name']: x for x in tax[k]}
     tax.update(new_dict)
 
-    with open('json/taxonomy3.3_standard.json', 'w') as f:
+    with open('json/taxonomy%s_standard.json' % taxonomy_vers, 'w') as f:
         json.dump(tax, f, indent=4)
