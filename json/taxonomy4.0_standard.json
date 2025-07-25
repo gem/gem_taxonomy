@@ -559,7 +559,7 @@
         {
             "prog": "1600",
             "name": "MDD",
-            "title": "MDD(sys_a;sys_b), dfferent materials in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
+            "title": "MDD(sys_a;sys_b), different materials in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
             "desc": "",
             "group": "material_type",
             "attr": "material",
@@ -4706,7 +4706,7 @@
         "MDD": {
             "prog": "1600",
             "name": "MDD",
-            "title": "MDD(sys_a;sys_b), dfferent materials in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
+            "title": "MDD(sys_a;sys_b), different materials in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
             "desc": "",
             "group": "material_type",
             "attr": "material",
