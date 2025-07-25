@@ -1230,7 +1230,7 @@
         {
             "prog": "800",
             "name": "LDD",
-            "title": "LDD(sys_a;sys_b), dfferent types of LLRS in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
+            "title": "LDD(sys_a;sys_b), different types of LLRS in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
             "desc": "",
             "group": "type_lateral_load",
             "attr": "llrs",
@@ -5377,7 +5377,7 @@
         "LDD": {
             "prog": "800",
             "name": "LDD",
-            "title": "LDD(sys_a;sys_b), dfferent types of LLRS in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
+            "title": "LDD(sys_a;sys_b), different types of LLRS in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
             "desc": "",
             "group": "type_lateral_load",
             "attr": "llrs",
