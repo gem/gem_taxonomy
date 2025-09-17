@@ -377,6 +377,12 @@
             "name": "building_occupancy_class",
             "title": "Building occupancy class",
             "group": "occupancy"
+        },
+        {
+            "prog": "100",
+            "name": "size_category",
+            "title": "Size category",
+            "group": "occupancy"
         }
     ],
     "Atom": [
@@ -3239,6 +3245,50 @@
             "type": "",
             "args": "",
             "params": ""
+        },
+        {
+            "prog": "0",
+            "name": "XS",
+            "title": "Micro-business (< 9 employees)",
+            "desc": "",
+            "group": "size_category",
+            "attr": "occupancy",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "100",
+            "name": "SS",
+            "title": "Small business (10 - 49 employees)",
+            "desc": "",
+            "group": "size_category",
+            "attr": "occupancy",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "200",
+            "name": "MS",
+            "title": "Medium business (50 - 249 employees)",
+            "desc": "",
+            "group": "size_category",
+            "attr": "occupancy",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "300",
+            "name": "LS",
+            "title": "Large business (> 250 employees)",
+            "desc": "",
+            "group": "size_category",
+            "attr": "occupancy",
+            "type": "",
+            "args": "",
+            "params": ""
         }
     ],
     "Param": {
@@ -3505,7 +3555,7 @@
             {
                 "atom": "COM",
                 "name": "3C",
-                "title": "Fotels and motels",
+                "title": "Hotels and motels",
                 "desc": "",
                 "prog": "2000"
             },
@@ -4150,6 +4200,22 @@
         ],
         "FW4": [
             "FW"
+        ],
+        "XS": [
+            "COM",
+            "IND"
+        ],
+        "SS": [
+            "COM",
+            "IND"
+        ],
+        "MS": [
+            "COM",
+            "IND"
+        ],
+        "LS": [
+            "COM",
+            "IND"
         ]
     },
     "AtomType": {},
@@ -4523,6 +4589,12 @@
             "prog": "0",
             "name": "building_occupancy_class",
             "title": "Building occupancy class",
+            "group": "occupancy"
+        },
+        "size_category": {
+            "prog": "100",
+            "name": "size_category",
+            "title": "Size category",
             "group": "occupancy"
         }
     },
@@ -7382,6 +7454,50 @@
             "title": "Other occupancy type",
             "desc": "",
             "group": "building_occupancy_class",
+            "attr": "occupancy",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "XS": {
+            "prog": "0",
+            "name": "XS",
+            "title": "Micro-business (< 9 employees)",
+            "desc": "",
+            "group": "size_category",
+            "attr": "occupancy",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "SS": {
+            "prog": "100",
+            "name": "SS",
+            "title": "Small business (10 - 49 employees)",
+            "desc": "",
+            "group": "size_category",
+            "attr": "occupancy",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "MS": {
+            "prog": "200",
+            "name": "MS",
+            "title": "Medium business (50 - 249 employees)",
+            "desc": "",
+            "group": "size_category",
+            "attr": "occupancy",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "LS": {
+            "prog": "300",
+            "name": "LS",
+            "title": "Large business (> 250 employees)",
+            "desc": "",
+            "group": "size_category",
             "attr": "occupancy",
             "type": "",
             "args": "",
