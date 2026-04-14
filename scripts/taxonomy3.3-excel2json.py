@@ -83,6 +83,7 @@ if __name__ == '__main__':
     ref_found = False
     taxmod_atom_type = {}
     taxmod_atom_deps = {}
+    taxmod_atom_deny = {}
 
     attribute_prog = 0
     for row in rows:
@@ -92,6 +93,7 @@ if __name__ == '__main__':
             continue
 
         if row[ATTRIBUTE_ATOMSGROUP_TITL_IDX] == '':
+            print('summary analyses interrupted at line [%s]' % row)
             break
 
         if row[ATTRIBUTE_NAME_IDX] != '':
@@ -201,10 +203,30 @@ if __name__ == '__main__':
                 taxmod_atom_type[atom_name] = atom_type
 
             if atom_deps:
-                taxmod_atom_deps[atom_name] = (
-                    [x.strip() for x in atom_deps.split(',')])
+                deps = (
+                    [x.strip() for x in atom_deps.split(',') if not x.startswith('-')])
+                if deps:
+                    taxmod_atom_deps[atom_name] = deps
+                denials_in = (
+                    [x.strip()[1:] for x in atom_deps.split(',') if x.startswith('-')])
+                if denials_in:
+                    atoms_cur = [x['name'] for x in tax['Atom']]
+                    atomsgroups_cur = [x['name'] for x in tax['AtomsGroup']]
+                    deny_atoms = []
+                    for denial_in in denials_in:
+                        if denial_in in atomsgroups_cur:
+                            deny_atoms += [x['name'] for x in tax['Atom'] if x['group'] == denial_in]
+                        elif denial_in == denial_in.upper():
+                            deny_atoms += [denial_in]
+                        else:
+                            print('Tab: %s, Row: %s, unknown AtomsGroup or Atom [%s]' %(
+                                sheet_name, idx, denial_in), file=sys.stderr)
+                            sys.exit(1)
+                    if deny_atoms:
+                        taxmod_atom_deny[atom_name] = deny_atoms
 
     tax['AtomType'] = taxmod_atom_type
+    tax['AtomsDeny'] = taxmod_atom_deny
     tax['AtomsDeps'] = taxmod_atom_deps
 
     new_dict = {}

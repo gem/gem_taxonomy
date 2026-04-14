@@ -38,7 +38,7 @@
         },
         {
             "prog": "700",
-            "name": "dates",
+            "name": "year",
             "title": "Date of Construction or Retrofit"
         },
         {
@@ -194,18 +194,12 @@
         },
         {
             "prog": "400",
-            "name": "pga_rock",
-            "title": "Design Peak Ground Acceleration on Soil",
-            "group": "eq_design"
-        },
-        {
-            "prog": "500",
             "name": "contents_provisions",
             "title": "Contents provisions",
             "group": "eq_design"
         },
         {
-            "prog": "600",
+            "prog": "500",
             "name": "non_strct_comp",
             "title": "Non structural components",
             "group": "eq_design"
@@ -280,13 +274,13 @@
             "prog": "0",
             "name": "construction_completed_year",
             "title": "Construction completed (year)",
-            "group": "dates"
+            "group": "year"
         },
         {
             "prog": "100",
             "name": "physical_condition_maintenance",
             "title": "Physical condition / maintenance",
-            "group": "dates"
+            "group": "year"
         },
         {
             "prog": "0",
@@ -356,12 +350,6 @@
         },
         {
             "prog": "100",
-            "name": "floor_system_type",
-            "title": "Floor system type",
-            "group": "floor"
-        },
-        {
-            "prog": "200",
             "name": "floor_connections",
             "title": "Floor connections",
             "group": "floor"
@@ -1235,6 +1223,17 @@
         },
         {
             "prog": "800",
+            "name": "LFLSINF",
+            "title": "Infilled flat slab/plate or infilled waffle slab",
+            "desc": "",
+            "group": "type_lateral_load",
+            "attr": "llrs",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "900",
             "name": "LDD",
             "title": "LDD(sys_a;sys_b), different types of LLRS in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
             "desc": "",
@@ -1245,7 +1244,7 @@
             "params": ""
         },
         {
-            "prog": "900",
+            "prog": "1000",
             "name": "LHV",
             "title": "LHV(sys_a;sys_b), differnet LLRS in height \n(a=primary system, and b=secondary system)",
             "desc": "",
@@ -1256,7 +1255,7 @@
             "params": ""
         },
         {
-            "prog": "1000",
+            "prog": "1100",
             "name": "LO",
             "title": "Other lateral load-resisting system",
             "desc": "",
@@ -1451,7 +1450,7 @@
             "attr": "eq_design",
             "type": "",
             "args": "",
-            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
+            "params": "{ \"type\": \"rangeable_float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         {
             "prog": "0",
@@ -1462,7 +1461,7 @@
             "attr": "eq_design",
             "type": "",
             "args": "",
-            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
+            "params": "{ \"type\": \"rangeable_float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         {
             "prog": "0",
@@ -1830,10 +1829,10 @@
         {
             "prog": "0",
             "name": "Y",
-            "title": "Date of construction or retrofit",
-            "desc": "Y:n, exact date of construction or retrofit.\nY:a-b, range of date of construction or retrofit.\nY:<n, n upper limit of date of construction or retrofit (with n excluded).\nY:>n, n lower limit of date of construction or retrofit (with n excluded).",
+            "title": "Year of construction or retrofit",
+            "desc": "Y:n, exact year of construction or retrofit.\nY:a-b, range of years of construction or retrofit.\nY:<n, n upper limit of year of construction or retrofit (with n excluded).\nY:>n, n lower limit of year of construction or retrofit (with n excluded).",
             "group": "construction_completed_year",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": "{\n            \"type\": \"rangeable_int\",\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"year\", \"years\"]\n}"
@@ -1841,10 +1840,10 @@
         {
             "prog": "100",
             "name": "YAPP",
-            "title": "Approximate date of construction or retrofit",
+            "title": "Approximate year of construction or retrofit",
             "desc": "",
             "group": "construction_completed_year",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"year\", \"years\"]\n}"
@@ -1855,7 +1854,7 @@
             "title": "Poor physical condition/maintenance",
             "desc": "",
             "group": "physical_condition_maintenance",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": ""
@@ -1866,7 +1865,7 @@
             "title": "Moderate physical condition/maintenance",
             "desc": "",
             "group": "physical_condition_maintenance",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": ""
@@ -1877,7 +1876,7 @@
             "title": "Good physical condition/maintenance",
             "desc": "",
             "group": "physical_condition_maintenance",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": ""
@@ -2837,10 +2836,10 @@
             "attr": "floor",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "200",
+            "prog": "500",
             "name": "FE",
             "title": "Earthen",
             "desc": "",
@@ -2851,7 +2850,7 @@
             "params": ""
         },
         {
-            "prog": "300",
+            "prog": "600",
             "name": "FC",
             "title": "Concrete",
             "desc": "",
@@ -2859,10 +2858,10 @@
             "attr": "floor",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "400",
+            "prog": "1100",
             "name": "FME",
             "title": "Metal",
             "desc": "",
@@ -2870,10 +2869,10 @@
             "attr": "floor",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "500",
+            "prog": "1500",
             "name": "FW",
             "title": "Wood",
             "desc": "",
@@ -2881,168 +2880,14 @@
             "attr": "floor",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "600",
+            "prog": "2000",
             "name": "FO",
             "title": "Floor material, other",
             "desc": "",
             "group": "floor_system_material",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "0",
-            "name": "FM1",
-            "title": "Vaulted masonry",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "100",
-            "name": "FM2",
-            "title": "Shallow-arched masonry",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "200",
-            "name": "FM3",
-            "title": "Composite cast-in-place reinforced concrete and masonry floor system",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "300",
-            "name": "FC1",
-            "title": "Cast-in-place beamless reinforced concrete floor",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "400",
-            "name": "FC2",
-            "title": "Cast-in-place  beam-supported reinforced concrete floor",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "500",
-            "name": "FC3",
-            "title": "Precast concrete floor with reinforced concrete topping",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "600",
-            "name": "FC4",
-            "title": "Precast concrete floor without reinforced concrete topping",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "700",
-            "name": "FME1",
-            "title": "Metal beams, trusses, or joists supporting light flooring",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "800",
-            "name": "FME2",
-            "title": "Metal beams supporting precast concrete slabs",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "900",
-            "name": "FME3",
-            "title": "Composite steel deck and concrete slab",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "1000",
-            "name": "FW1",
-            "title": "Wooden beams or trusses and joists supporting light flooring",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "1100",
-            "name": "FW2",
-            "title": "Wooden beams or trusses and joists supporting heavy flooring",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "1200",
-            "name": "FW3",
-            "title": "Wood-based sheets on joists or beams",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        {
-            "prog": "1300",
-            "name": "FW4",
-            "title": "Plywood panels or other light-weight panels for floor",
-            "desc": "",
-            "group": "floor_system_type",
             "attr": "floor",
             "type": "",
             "args": "",
@@ -3161,8 +3006,8 @@
         {
             "prog": "2800",
             "name": "MIX",
-            "title": "Mixed",
-            "desc": "",
+            "title": "Mixed occupancy types",
+            "desc": "MIX(RES;COM)",
             "group": "building_occupancy_class",
             "attr": "occupancy",
             "type": "",
@@ -3428,6 +3273,112 @@
                 "title": "Fabric, other",
                 "desc": "",
                 "prog": "2300"
+            }
+        ],
+        "FM": [
+            {
+                "atom": "FM",
+                "name": "1",
+                "title": "Vaulted masonry",
+                "desc": "",
+                "prog": "200"
+            },
+            {
+                "atom": "FM",
+                "name": "2",
+                "title": "Shallow-arched masonry",
+                "desc": "",
+                "prog": "300"
+            },
+            {
+                "atom": "FM",
+                "name": "3",
+                "title": "Composite cast-in-place reinforced concrete and masonry floor system",
+                "desc": "",
+                "prog": "400"
+            }
+        ],
+        "FC": [
+            {
+                "atom": "FC",
+                "name": "1",
+                "title": "Cast-in-place beamless reinforced concrete floor",
+                "desc": "",
+                "prog": "700"
+            },
+            {
+                "atom": "FC",
+                "name": "2",
+                "title": "Cast-in-place  beam-supported reinforced concrete floor",
+                "desc": "",
+                "prog": "800"
+            },
+            {
+                "atom": "FC",
+                "name": "3",
+                "title": "Precast concrete floor with reinforced concrete topping",
+                "desc": "",
+                "prog": "900"
+            },
+            {
+                "atom": "FC",
+                "name": "4",
+                "title": "Precast concrete floor without reinforced concrete topping",
+                "desc": "",
+                "prog": "1000"
+            }
+        ],
+        "FME": [
+            {
+                "atom": "FME",
+                "name": "1",
+                "title": "Metal beams, trusses, or joists supporting light flooring",
+                "desc": "",
+                "prog": "1200"
+            },
+            {
+                "atom": "FME",
+                "name": "2",
+                "title": "Metal beams supporting precast concrete slabs",
+                "desc": "",
+                "prog": "1300"
+            },
+            {
+                "atom": "FME",
+                "name": "3",
+                "title": "Composite steel deck and concrete slab",
+                "desc": "",
+                "prog": "1400"
+            }
+        ],
+        "FW": [
+            {
+                "atom": "FW",
+                "name": "1",
+                "title": "Wooden beams or trusses and joists supporting light flooring",
+                "desc": "",
+                "prog": "1600"
+            },
+            {
+                "atom": "FW",
+                "name": "2",
+                "title": "Wooden beams or trusses and joists supporting heavy flooring",
+                "desc": "",
+                "prog": "1700"
+            },
+            {
+                "atom": "FW",
+                "name": "3",
+                "title": "Wood-based sheets on joists or beams",
+                "desc": "",
+                "prog": "1800"
+            },
+            {
+                "atom": "FW",
+                "name": "4",
+                "title": "Plywood panels or other light-weight panels for floor",
+                "desc": "",
+                "prog": "1900"
             }
         ],
         "RES": [
@@ -4159,48 +4110,6 @@
         "IRVO": [
             "_ARG"
         ],
-        "FM1": [
-            "FM"
-        ],
-        "FM2": [
-            "FM"
-        ],
-        "FM3": [
-            "FM"
-        ],
-        "FC1": [
-            "FC"
-        ],
-        "FC2": [
-            "FC"
-        ],
-        "FC3": [
-            "FC"
-        ],
-        "FC4": [
-            "FC"
-        ],
-        "FME1": [
-            "FME"
-        ],
-        "FME2": [
-            "FME"
-        ],
-        "FME3": [
-            "FME"
-        ],
-        "FW1": [
-            "FW"
-        ],
-        "FW2": [
-            "FW"
-        ],
-        "FW3": [
-            "FW"
-        ],
-        "FW4": [
-            "FW"
-        ],
         "XS": [
             "COM",
             "IND"
@@ -4219,6 +4128,56 @@
         ]
     },
     "AtomType": {},
+    "AtomsDeny": {
+        "CL": [
+            "ADO",
+            "ST",
+            "STRUB",
+            "STDRE"
+        ],
+        "CLBRS": [
+            "ADO",
+            "ST",
+            "STRUB",
+            "STDRE"
+        ],
+        "CLBRH": [
+            "ADO",
+            "ST",
+            "STRUB",
+            "STDRE"
+        ],
+        "CLBLH": [
+            "ADO",
+            "ST",
+            "STRUB",
+            "STDRE"
+        ],
+        "CB": [
+            "ADO",
+            "ST",
+            "STRUB",
+            "STDRE"
+        ],
+        "CBS": [
+            "ADO",
+            "ST",
+            "STRUB",
+            "STDRE"
+        ],
+        "CBH": [
+            "ADO",
+            "ST",
+            "STRUB",
+            "STDRE"
+        ],
+        "MO": [
+            "ADO",
+            "ST",
+            "STRUB",
+            "STDRE"
+        ]
+    },
     "AttributeDict": {
         "material": {
             "prog": "0",
@@ -4255,9 +4214,9 @@
             "name": "height",
             "title": "height"
         },
-        "dates": {
+        "year": {
             "prog": "700",
-            "name": "dates",
+            "name": "year",
             "title": "Date of Construction or Retrofit"
         },
         "shape": {
@@ -4406,19 +4365,19 @@
             "group": "eq_design"
         },
         "pga_rock": {
-            "prog": "400",
+            "prog": "300",
             "name": "pga_rock",
-            "title": "Design Peak Ground Acceleration on Soil",
+            "title": "Design Peak Ground Acceleration on Rock",
             "group": "eq_design"
         },
         "contents_provisions": {
-            "prog": "500",
+            "prog": "400",
             "name": "contents_provisions",
             "title": "Contents provisions",
             "group": "eq_design"
         },
         "non_strct_comp": {
-            "prog": "600",
+            "prog": "500",
             "name": "non_strct_comp",
             "title": "Non structural components",
             "group": "eq_design"
@@ -4493,13 +4452,13 @@
             "prog": "0",
             "name": "construction_completed_year",
             "title": "Construction completed (year)",
-            "group": "dates"
+            "group": "year"
         },
         "physical_condition_maintenance": {
             "prog": "100",
             "name": "physical_condition_maintenance",
             "title": "Physical condition / maintenance",
-            "group": "dates"
+            "group": "year"
         },
         "plan_shape_footprint": {
             "prog": "0",
@@ -4567,14 +4526,8 @@
             "title": "Floor system material",
             "group": "floor"
         },
-        "floor_system_type": {
-            "prog": "100",
-            "name": "floor_system_type",
-            "title": "Floor system type",
-            "group": "floor"
-        },
         "floor_connections": {
-            "prog": "200",
+            "prog": "100",
             "name": "floor_connections",
             "title": "Floor connections",
             "group": "floor"
@@ -5446,8 +5399,19 @@
             "args": "",
             "params": ""
         },
-        "LDD": {
+        "LFLSINF": {
             "prog": "800",
+            "name": "LFLSINF",
+            "title": "Infilled flat slab/plate or infilled waffle slab",
+            "desc": "",
+            "group": "type_lateral_load",
+            "attr": "llrs",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "LDD": {
+            "prog": "900",
             "name": "LDD",
             "title": "LDD(sys_a;sys_b), different types of LLRS in the two directions\n(a= system parallel to the building facade;\n b= system perpendicular to the building facade)",
             "desc": "",
@@ -5458,7 +5422,7 @@
             "params": ""
         },
         "LHV": {
-            "prog": "900",
+            "prog": "1000",
             "name": "LHV",
             "title": "LHV(sys_a;sys_b), differnet LLRS in height \n(a=primary system, and b=secondary system)",
             "desc": "",
@@ -5469,7 +5433,7 @@
             "params": ""
         },
         "LO": {
-            "prog": "1000",
+            "prog": "1100",
             "name": "LO",
             "title": "Other lateral load-resisting system",
             "desc": "",
@@ -5664,7 +5628,7 @@
             "attr": "eq_design",
             "type": "",
             "args": "",
-            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
+            "params": "{ \"type\": \"rangeable_float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         "PGAS": {
             "prog": "0",
@@ -5675,7 +5639,7 @@
             "attr": "eq_design",
             "type": "",
             "args": "",
-            "params": "{ \"type\": \"float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
+            "params": "{ \"type\": \"rangeable_float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         "CNP": {
             "prog": "0",
@@ -6043,10 +6007,10 @@
         "Y": {
             "prog": "0",
             "name": "Y",
-            "title": "Date of construction or retrofit",
-            "desc": "Y:n, exact date of construction or retrofit.\nY:a-b, range of date of construction or retrofit.\nY:<n, n upper limit of date of construction or retrofit (with n excluded).\nY:>n, n lower limit of date of construction or retrofit (with n excluded).",
+            "title": "Year of construction or retrofit",
+            "desc": "Y:n, exact year of construction or retrofit.\nY:a-b, range of years of construction or retrofit.\nY:<n, n upper limit of year of construction or retrofit (with n excluded).\nY:>n, n lower limit of year of construction or retrofit (with n excluded).",
             "group": "construction_completed_year",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": "{\n            \"type\": \"rangeable_int\",\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"year\", \"years\"]\n}"
@@ -6054,10 +6018,10 @@
         "YAPP": {
             "prog": "100",
             "name": "YAPP",
-            "title": "Approximate date of construction or retrofit",
+            "title": "Approximate year of construction or retrofit",
             "desc": "",
             "group": "construction_completed_year",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": "{\n            \"type\": \"int\",\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"year\", \"years\"]\n}"
@@ -6068,7 +6032,7 @@
             "title": "Poor physical condition/maintenance",
             "desc": "",
             "group": "physical_condition_maintenance",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": ""
@@ -6079,7 +6043,7 @@
             "title": "Moderate physical condition/maintenance",
             "desc": "",
             "group": "physical_condition_maintenance",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": ""
@@ -6090,7 +6054,7 @@
             "title": "Good physical condition/maintenance",
             "desc": "",
             "group": "physical_condition_maintenance",
-            "attr": "dates",
+            "attr": "year",
             "type": "",
             "args": "",
             "params": ""
@@ -7050,10 +7014,10 @@
             "attr": "floor",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "FE": {
-            "prog": "200",
+            "prog": "500",
             "name": "FE",
             "title": "Earthen",
             "desc": "",
@@ -7064,7 +7028,7 @@
             "params": ""
         },
         "FC": {
-            "prog": "300",
+            "prog": "600",
             "name": "FC",
             "title": "Concrete",
             "desc": "",
@@ -7072,10 +7036,10 @@
             "attr": "floor",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "FME": {
-            "prog": "400",
+            "prog": "1100",
             "name": "FME",
             "title": "Metal",
             "desc": "",
@@ -7083,10 +7047,10 @@
             "attr": "floor",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "FW": {
-            "prog": "500",
+            "prog": "1500",
             "name": "FW",
             "title": "Wood",
             "desc": "",
@@ -7094,168 +7058,14 @@
             "attr": "floor",
             "type": "",
             "args": "",
-            "params": ""
+            "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "FO": {
-            "prog": "600",
+            "prog": "2000",
             "name": "FO",
             "title": "Floor material, other",
             "desc": "",
             "group": "floor_system_material",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FM1": {
-            "prog": "0",
-            "name": "FM1",
-            "title": "Vaulted masonry",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FM2": {
-            "prog": "100",
-            "name": "FM2",
-            "title": "Shallow-arched masonry",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FM3": {
-            "prog": "200",
-            "name": "FM3",
-            "title": "Composite cast-in-place reinforced concrete and masonry floor system",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FC1": {
-            "prog": "300",
-            "name": "FC1",
-            "title": "Cast-in-place beamless reinforced concrete floor",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FC2": {
-            "prog": "400",
-            "name": "FC2",
-            "title": "Cast-in-place  beam-supported reinforced concrete floor",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FC3": {
-            "prog": "500",
-            "name": "FC3",
-            "title": "Precast concrete floor with reinforced concrete topping",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FC4": {
-            "prog": "600",
-            "name": "FC4",
-            "title": "Precast concrete floor without reinforced concrete topping",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FME1": {
-            "prog": "700",
-            "name": "FME1",
-            "title": "Metal beams, trusses, or joists supporting light flooring",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FME2": {
-            "prog": "800",
-            "name": "FME2",
-            "title": "Metal beams supporting precast concrete slabs",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FME3": {
-            "prog": "900",
-            "name": "FME3",
-            "title": "Composite steel deck and concrete slab",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FW1": {
-            "prog": "1000",
-            "name": "FW1",
-            "title": "Wooden beams or trusses and joists supporting light flooring",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FW2": {
-            "prog": "1100",
-            "name": "FW2",
-            "title": "Wooden beams or trusses and joists supporting heavy flooring",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FW3": {
-            "prog": "1200",
-            "name": "FW3",
-            "title": "Wood-based sheets on joists or beams",
-            "desc": "",
-            "group": "floor_system_type",
-            "attr": "floor",
-            "type": "",
-            "args": "",
-            "params": ""
-        },
-        "FW4": {
-            "prog": "1300",
-            "name": "FW4",
-            "title": "Plywood panels or other light-weight panels for floor",
-            "desc": "",
-            "group": "floor_system_type",
             "attr": "floor",
             "type": "",
             "args": "",
@@ -7374,8 +7184,8 @@
         "MIX": {
             "prog": "2800",
             "name": "MIX",
-            "title": "Mixed",
-            "desc": "",
+            "title": "Mixed occupancy types",
+            "desc": "MIX(RES;COM)",
             "group": "building_occupancy_class",
             "attr": "occupancy",
             "type": "",
