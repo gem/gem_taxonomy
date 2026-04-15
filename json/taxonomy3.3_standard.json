@@ -3888,6 +3888,7 @@
         ]
     },
     "AtomType": {},
+    "AtomsDeny": {},
     "AttributeDict": {
         "material": {
             "prog": "0",
