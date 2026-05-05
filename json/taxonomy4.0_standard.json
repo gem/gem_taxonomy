@@ -151,6 +151,12 @@
             "group": "material"
         },
         {
+            "prog": "1200",
+            "name": "mobile_connection",
+            "title": "mobile structure support system",
+            "group": "material"
+        },
+        {
             "prog": "0",
             "name": "type_lateral_load",
             "title": "Type of lateral load-resisting system",
@@ -188,8 +194,8 @@
         },
         {
             "prog": "300",
-            "name": "pga_rock",
-            "title": "Design Peak Ground Acceleration on Rock",
+            "name": "pga",
+            "title": "Peak Ground Acceleration",
             "group": "eq_design"
         },
         {
@@ -272,8 +278,8 @@
         },
         {
             "prog": "0",
-            "name": "construction_completed_year",
-            "title": "Construction completed (year)",
+            "name": "year",
+            "title": "Year of construction or retrofit",
             "group": "year"
         },
         {
@@ -574,6 +580,17 @@
         },
         {
             "prog": "1800",
+            "name": "MOB",
+            "title": "Mobile (manufactured) structure",
+            "desc": "",
+            "group": "material_type",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "1900",
             "name": "MATO",
             "title": "Other material",
             "desc": "",
@@ -1135,6 +1152,50 @@
         },
         {
             "prog": "0",
+            "name": "UA",
+            "title": "Unanchored",
+            "desc": "",
+            "group": "mobile_connection",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "100",
+            "name": "TD",
+            "title": "Tie-downs",
+            "desc": "",
+            "group": "mobile_connection",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "200",
+            "name": "PW",
+            "title": "Perimeter wall foundations",
+            "desc": "",
+            "group": "mobile_connection",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "300",
+            "name": "PS",
+            "title": "Proprietary systems",
+            "desc": "",
+            "group": "mobile_connection",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        {
+            "prog": "0",
             "name": "LN",
             "title": "No lateral load-resisting system",
             "desc": "",
@@ -1446,18 +1507,18 @@
             "name": "PGAR",
             "title": "Design Peak Ground Acceleration on rock conditions",
             "desc": "Units as a fraction of the gravity force\nPGAR:n, exact PGAR value.\nPGAR:a-b, range of PGAR value\nPGAR:<n, n upper limit of PGAR (with PGAR n excluded).\nPGAR:>n, n lower limit of PGAR (with PGAR n excluded).",
-            "group": "pga_rock",
+            "group": "pga",
             "attr": "eq_design",
             "type": "",
             "args": "",
             "params": "{ \"type\": \"rangeable_float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         {
-            "prog": "0",
+            "prog": "100",
             "name": "PGAS",
             "title": "Design Peak Ground Acceleration on soil conditions",
             "desc": "Units as a fraction of the gravity force\nPGAS:n, exact PGAS value.\nPGAS:a-b, range of PGAS value\nPGAS:<n, n upper limit of PGAS (with PGAS n excluded).\nPGAS:>n, n lower limit of PGAS (with PGAS n excluded).",
-            "group": "pga_rock",
+            "group": "pga",
             "attr": "eq_design",
             "type": "",
             "args": "",
@@ -1831,7 +1892,7 @@
             "name": "Y",
             "title": "Year of construction or retrofit",
             "desc": "Y:n, exact year of construction or retrofit.\nY:a-b, range of years of construction or retrofit.\nY:<n, n upper limit of year of construction or retrofit (with n excluded).\nY:>n, n lower limit of year of construction or retrofit (with n excluded).",
-            "group": "construction_completed_year",
+            "group": "year",
             "attr": "year",
             "type": "",
             "args": "",
@@ -1842,7 +1903,7 @@
             "name": "YAPP",
             "title": "Approximate year of construction or retrofit",
             "desc": "",
-            "group": "construction_completed_year",
+            "group": "year",
             "attr": "year",
             "type": "",
             "args": "",
@@ -2982,7 +3043,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "1300",
+            "prog": "1100",
             "name": "NONRES",
             "title": "Not residential",
             "desc": "",
@@ -2993,7 +3054,7 @@
             "params": ""
         },
         {
-            "prog": "1400",
+            "prog": "1200",
             "name": "COM",
             "title": "Commercial and public",
             "desc": "",
@@ -3004,7 +3065,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "2800",
+            "prog": "2600",
             "name": "MIX",
             "title": "Mixed occupancy types",
             "desc": "MIX(RES;COM)",
@@ -3015,7 +3076,7 @@
             "params": ""
         },
         {
-            "prog": "2900",
+            "prog": "2700",
             "name": "IND",
             "title": "Industrial",
             "desc": "",
@@ -3026,7 +3087,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "3600",
+            "prog": "3400",
             "name": "AGR",
             "title": "Agriculture",
             "desc": "",
@@ -3037,7 +3098,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "4000",
+            "prog": "3800",
             "name": "GOV",
             "title": "Government",
             "desc": "",
@@ -3048,7 +3109,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "4600",
+            "prog": "4400",
             "name": "EDU",
             "title": "Education",
             "desc": "",
@@ -3059,7 +3120,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "5700",
+            "prog": "5500",
             "name": "HEA",
             "title": "Healthcare",
             "desc": "",
@@ -3070,7 +3131,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "6800",
+            "prog": "6600",
             "name": "TRT",
             "title": "Transportation",
             "desc": "",
@@ -3081,7 +3142,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         {
-            "prog": "7200",
+            "prog": "7000",
             "name": "OCO",
             "title": "Other occupancy type",
             "desc": "",
@@ -3094,7 +3155,7 @@
         {
             "prog": "0",
             "name": "XS",
-            "title": "Micro-business (< 9 employees)",
+            "title": "Micro-establishment (< 9 employees)",
             "desc": "",
             "group": "size_category",
             "attr": "occupancy",
@@ -3105,7 +3166,7 @@
         {
             "prog": "100",
             "name": "SS",
-            "title": "Small business (10 - 49 employees)",
+            "title": "Small establishment (10 - 49 employees)",
             "desc": "",
             "group": "size_category",
             "attr": "occupancy",
@@ -3116,7 +3177,7 @@
         {
             "prog": "200",
             "name": "MS",
-            "title": "Medium business (50 - 249 employees)",
+            "title": "Medium establishment (50 - 249 employees)",
             "desc": "",
             "group": "size_category",
             "attr": "occupancy",
@@ -3127,7 +3188,7 @@
         {
             "prog": "300",
             "name": "LS",
-            "title": "Large business (> 250 employees)",
+            "title": "Large establishment (> 250 employees)",
             "desc": "",
             "group": "size_category",
             "attr": "occupancy",
@@ -3440,31 +3501,17 @@
             },
             {
                 "atom": "RES",
-                "name": "3",
-                "title": "Temporary lodging",
-                "desc": "",
-                "prog": "900"
-            },
-            {
-                "atom": "RES",
                 "name": "4",
                 "title": "Institutional housing",
                 "desc": "",
-                "prog": "1000"
-            },
-            {
-                "atom": "RES",
-                "name": "5",
-                "title": "Mobile home",
-                "desc": "",
-                "prog": "1100"
+                "prog": "900"
             },
             {
                 "atom": "RES",
                 "name": "6",
                 "title": "Indigenous housing",
                 "desc": "",
-                "prog": "1200"
+                "prog": "1000"
             }
         ],
         "COM": [
@@ -3473,91 +3520,91 @@
                 "name": "1",
                 "title": "Retail trade",
                 "desc": "",
-                "prog": "1500"
+                "prog": "1300"
             },
             {
                 "atom": "COM",
                 "name": "2",
                 "title": "Wholesale trade and storage (warehouse)",
                 "desc": "",
-                "prog": "1600"
+                "prog": "1400"
             },
             {
                 "atom": "COM",
                 "name": "3",
                 "title": "Offices, professional/technical services",
                 "desc": "",
-                "prog": "1700"
+                "prog": "1500"
             },
             {
                 "atom": "COM",
                 "name": "3A",
                 "title": "Financial and insurance activities",
                 "desc": "",
-                "prog": "1800"
+                "prog": "1600"
             },
             {
                 "atom": "COM",
                 "name": "3B",
                 "title": "Personal and Repair Services",
                 "desc": "",
-                "prog": "1900"
+                "prog": "1700"
             },
             {
                 "atom": "COM",
                 "name": "3C",
                 "title": "Hotels and motels",
                 "desc": "",
-                "prog": "2000"
+                "prog": "1800"
             },
             {
                 "atom": "COM",
                 "name": "4",
                 "title": "Covered parking garage",
                 "desc": "",
-                "prog": "2100"
+                "prog": "1900"
             },
             {
                 "atom": "COM",
                 "name": "5",
                 "title": "Entertainment and recreation",
                 "desc": "",
-                "prog": "2200"
+                "prog": "2000"
             },
             {
                 "atom": "COM",
                 "name": "5A",
                 "title": "Entertainment",
                 "desc": "",
-                "prog": "2300"
+                "prog": "2100"
             },
             {
                 "atom": "COM",
                 "name": "5B",
                 "title": "Recreation",
                 "desc": "",
-                "prog": "2400"
+                "prog": "2200"
             },
             {
                 "atom": "COM",
                 "name": "5C",
                 "title": "Religious gathering",
                 "desc": "",
-                "prog": "2500"
+                "prog": "2300"
             },
             {
                 "atom": "COM",
                 "name": "5D",
                 "title": "Arena",
                 "desc": "",
-                "prog": "2600"
+                "prog": "2400"
             },
             {
                 "atom": "COM",
                 "name": "5E",
                 "title": "Cinema, auditoriums or concert hall",
                 "desc": "",
-                "prog": "2700"
+                "prog": "2500"
             }
         ],
         "IND": [
@@ -3566,42 +3613,42 @@
                 "name": "1",
                 "title": "Heavy Industry Factories",
                 "desc": "",
-                "prog": "3000"
+                "prog": "2800"
             },
             {
                 "atom": "IND",
                 "name": "2",
                 "title": "Light Industry Factories",
                 "desc": "",
-                "prog": "3100"
+                "prog": "2900"
             },
             {
                 "atom": "IND",
                 "name": "3",
                 "title": "Food/Drugs/Chemicals Factories",
                 "desc": "",
-                "prog": "3200"
+                "prog": "3000"
             },
             {
                 "atom": "IND",
                 "name": "4",
                 "title": "Metals/Minerals Processing Factories",
                 "desc": "",
-                "prog": "3300"
+                "prog": "3100"
             },
             {
                 "atom": "IND",
                 "name": "5",
                 "title": "High technology Labs/Factories",
                 "desc": "",
-                "prog": "3400"
+                "prog": "3200"
             },
             {
                 "atom": "IND",
                 "name": "6",
                 "title": "Construction Offices",
                 "desc": "",
-                "prog": "3500"
+                "prog": "3300"
             }
         ],
         "AGR": [
@@ -3610,21 +3657,21 @@
                 "name": "1",
                 "title": "Produce storage",
                 "desc": "",
-                "prog": "3700"
+                "prog": "3500"
             },
             {
                 "atom": "AGR",
                 "name": "2",
-                "title": "Hotels and motels",
+                "title": "Animal shelter",
                 "desc": "",
-                "prog": "3800"
+                "prog": "3600"
             },
             {
                 "atom": "AGR",
                 "name": "3",
                 "title": "Agricultural processing",
                 "desc": "",
-                "prog": "3900"
+                "prog": "3700"
             }
         ],
         "GOV": [
@@ -3633,35 +3680,35 @@
                 "name": "1",
                 "title": "Government, general services",
                 "desc": "",
-                "prog": "4100"
+                "prog": "3900"
             },
             {
                 "atom": "GOV",
                 "name": "2",
                 "title": "Government, emergency response",
                 "desc": "",
-                "prog": "4200"
+                "prog": "4000"
             },
             {
                 "atom": "GOV",
                 "name": "2A",
                 "title": "Government, police station",
                 "desc": "",
-                "prog": "4300"
+                "prog": "4100"
             },
             {
                 "atom": "GOV",
                 "name": "2B",
                 "title": "Government, fire station",
                 "desc": "",
-                "prog": "4400"
+                "prog": "4200"
             },
             {
                 "atom": "GOV",
                 "name": "2C",
                 "title": "Government, emergency operation center",
                 "desc": "",
-                "prog": "4500"
+                "prog": "4300"
             }
         ],
         "EDU": [
@@ -3670,70 +3717,70 @@
                 "name": "1",
                 "title": "Pre-school facility",
                 "desc": "",
-                "prog": "4700"
+                "prog": "4500"
             },
             {
                 "atom": "EDU",
                 "name": "1A",
                 "title": "Day care center",
                 "desc": "",
-                "prog": "4800"
+                "prog": "4600"
             },
             {
                 "atom": "EDU",
                 "name": "1B",
                 "title": "Pre-school / Kindergarten",
                 "desc": "",
-                "prog": "4900"
+                "prog": "4700"
             },
             {
                 "atom": "EDU",
                 "name": "2",
                 "title": "School ",
                 "desc": "",
-                "prog": "5000"
+                "prog": "4800"
             },
             {
                 "atom": "EDU",
                 "name": "2A",
                 "title": "Elementary/Primary School ",
                 "desc": "",
-                "prog": "5100"
+                "prog": "4900"
             },
             {
                 "atom": "EDU",
                 "name": "2B",
                 "title": "Middle School ",
                 "desc": "",
-                "prog": "5200"
+                "prog": "5000"
             },
             {
                 "atom": "EDU",
                 "name": "2C",
                 "title": "High/Secondary School ",
                 "desc": "",
-                "prog": "5300"
+                "prog": "5100"
             },
             {
                 "atom": "EDU",
                 "name": "3",
                 "title": "College/university, offices and/or classrooms",
                 "desc": "",
-                "prog": "5400"
+                "prog": "5200"
             },
             {
                 "atom": "EDU",
                 "name": "4",
                 "title": "College/university, research facilities and/or labs",
                 "desc": "",
-                "prog": "5500"
+                "prog": "5300"
             },
             {
                 "atom": "EDU",
                 "name": "5",
                 "title": "Other schools",
                 "desc": "",
-                "prog": "5600"
+                "prog": "5400"
             }
         ],
         "HEA": [
@@ -3742,70 +3789,70 @@
                 "name": "1",
                 "title": "Hospital",
                 "desc": "",
-                "prog": "5800"
+                "prog": "5600"
             },
             {
                 "atom": "HEA",
                 "name": "1A",
                 "title": "Primary Level Hospital",
                 "desc": "",
-                "prog": "5900"
+                "prog": "5700"
             },
             {
                 "atom": "HEA",
                 "name": "B",
                 "title": "Secondary Level Hospital",
                 "desc": "",
-                "prog": "6000"
+                "prog": "5800"
             },
             {
                 "atom": "HEA",
                 "name": "C",
                 "title": "Tertiary Level Hospital",
                 "desc": "",
-                "prog": "6100"
+                "prog": "5900"
             },
             {
                 "atom": "HEA",
                 "name": "2",
                 "title": "Clinic",
                 "desc": "",
-                "prog": "6200"
+                "prog": "6000"
             },
             {
                 "atom": "HEA",
                 "name": "3",
                 "title": "Basic Health Unit",
                 "desc": "",
-                "prog": "6300"
+                "prog": "6100"
             },
             {
                 "atom": "HEA",
                 "name": "4",
                 "title": "Specialty Center",
                 "desc": "",
-                "prog": "6400"
+                "prog": "6200"
             },
             {
                 "atom": "HEA",
                 "name": "5",
                 "title": "Health Post",
                 "desc": "",
-                "prog": "6500"
+                "prog": "6300"
             },
             {
                 "atom": "HEA",
                 "name": "6",
                 "title": "Rehabilitation Center",
                 "desc": "",
-                "prog": "6600"
+                "prog": "6400"
             },
             {
                 "atom": "HEA",
                 "name": "7",
                 "title": "Other Healthcare facilities",
                 "desc": "",
-                "prog": "6700"
+                "prog": "6500"
             }
         ],
         "TRT": [
@@ -3814,21 +3861,21 @@
                 "name": "1",
                 "title": "Bus station",
                 "desc": "",
-                "prog": "6900"
+                "prog": "6700"
             },
             {
                 "atom": "TRT",
                 "name": "2",
                 "title": "Railway station",
                 "desc": "",
-                "prog": "7000"
+                "prog": "6800"
             },
             {
                 "atom": "TRT",
                 "name": "3",
                 "title": "Airport",
                 "desc": "",
-                "prog": "7100"
+                "prog": "6900"
             }
         ]
     },
@@ -4060,6 +4107,18 @@
         "BOL": [
             "S"
         ],
+        "UA": [
+            "MOB"
+        ],
+        "TD": [
+            "MOB"
+        ],
+        "PW": [
+            "MOB"
+        ],
+        "PS": [
+            "MOB"
+        ],
         "DCW": [
             "LFM",
             "LFINF",
@@ -4112,19 +4171,27 @@
         ],
         "XS": [
             "COM",
-            "IND"
+            "IND",
+            "AGR",
+            "GOV"
         ],
         "SS": [
             "COM",
-            "IND"
+            "IND",
+            "AGR",
+            "GOV"
         ],
         "MS": [
             "COM",
-            "IND"
+            "IND",
+            "AGR",
+            "GOV"
         ],
         "LS": [
             "COM",
-            "IND"
+            "IND",
+            "AGR",
+            "GOV"
         ]
     },
     "AtomType": {},
@@ -4328,6 +4395,12 @@
             "title": "Steel connection type",
             "group": "material"
         },
+        "mobile_connection": {
+            "prog": "1200",
+            "name": "mobile_connection",
+            "title": "mobile structure support system",
+            "group": "material"
+        },
         "type_lateral_load": {
             "prog": "0",
             "name": "type_lateral_load",
@@ -4364,10 +4437,10 @@
             "title": "Lateral load coefficient",
             "group": "eq_design"
         },
-        "pga_rock": {
+        "pga": {
             "prog": "300",
-            "name": "pga_rock",
-            "title": "Design Peak Ground Acceleration on Rock",
+            "name": "pga",
+            "title": "Peak Ground Acceleration",
             "group": "eq_design"
         },
         "contents_provisions": {
@@ -4448,10 +4521,10 @@
             "title": "Slope of the ground (degrees)",
             "group": "height"
         },
-        "construction_completed_year": {
+        "year": {
             "prog": "0",
-            "name": "construction_completed_year",
-            "title": "Construction completed (year)",
+            "name": "year",
+            "title": "Year of construction or retrofit",
             "group": "year"
         },
         "physical_condition_maintenance": {
@@ -4750,8 +4823,19 @@
             "args": "{\"type\": \"filtered_attribute('material', ['MDV'])\",\n            \"args_min\": 2,\n            \"must_be_diff\": true\n            }",
             "params": ""
         },
-        "MATO": {
+        "MOB": {
             "prog": "1800",
+            "name": "MOB",
+            "title": "Mobile (manufactured) structure",
+            "desc": "",
+            "group": "material_type",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "MATO": {
+            "prog": "1900",
             "name": "MATO",
             "title": "Other material",
             "desc": "",
@@ -5311,6 +5395,50 @@
             "args": "",
             "params": ""
         },
+        "UA": {
+            "prog": "0",
+            "name": "UA",
+            "title": "Unanchored",
+            "desc": "",
+            "group": "mobile_connection",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "TD": {
+            "prog": "100",
+            "name": "TD",
+            "title": "Tie-downs",
+            "desc": "",
+            "group": "mobile_connection",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "PW": {
+            "prog": "200",
+            "name": "PW",
+            "title": "Perimeter wall foundations",
+            "desc": "",
+            "group": "mobile_connection",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
+        "PS": {
+            "prog": "300",
+            "name": "PS",
+            "title": "Proprietary systems",
+            "desc": "",
+            "group": "mobile_connection",
+            "attr": "material",
+            "type": "",
+            "args": "",
+            "params": ""
+        },
         "LN": {
             "prog": "0",
             "name": "LN",
@@ -5624,18 +5752,18 @@
             "name": "PGAR",
             "title": "Design Peak Ground Acceleration on rock conditions",
             "desc": "Units as a fraction of the gravity force\nPGAR:n, exact PGAR value.\nPGAR:a-b, range of PGAR value\nPGAR:<n, n upper limit of PGAR (with PGAR n excluded).\nPGAR:>n, n lower limit of PGAR (with PGAR n excluded).",
-            "group": "pga_rock",
+            "group": "pga",
             "attr": "eq_design",
             "type": "",
             "args": "",
             "params": "{ \"type\": \"rangeable_float\",\n            \"min\": 0,\n            \"min_incl\": true,\n            \"params_min\": 1,\n            \"params_max\": 1,\n            \"unit_measure\": [\"g\", \"g\"]\n}"
         },
         "PGAS": {
-            "prog": "0",
+            "prog": "100",
             "name": "PGAS",
             "title": "Design Peak Ground Acceleration on soil conditions",
             "desc": "Units as a fraction of the gravity force\nPGAS:n, exact PGAS value.\nPGAS:a-b, range of PGAS value\nPGAS:<n, n upper limit of PGAS (with PGAS n excluded).\nPGAS:>n, n lower limit of PGAS (with PGAS n excluded).",
-            "group": "pga_rock",
+            "group": "pga",
             "attr": "eq_design",
             "type": "",
             "args": "",
@@ -6009,7 +6137,7 @@
             "name": "Y",
             "title": "Year of construction or retrofit",
             "desc": "Y:n, exact year of construction or retrofit.\nY:a-b, range of years of construction or retrofit.\nY:<n, n upper limit of year of construction or retrofit (with n excluded).\nY:>n, n lower limit of year of construction or retrofit (with n excluded).",
-            "group": "construction_completed_year",
+            "group": "year",
             "attr": "year",
             "type": "",
             "args": "",
@@ -6020,7 +6148,7 @@
             "name": "YAPP",
             "title": "Approximate year of construction or retrofit",
             "desc": "",
-            "group": "construction_completed_year",
+            "group": "year",
             "attr": "year",
             "type": "",
             "args": "",
@@ -7160,7 +7288,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "NONRES": {
-            "prog": "1300",
+            "prog": "1100",
             "name": "NONRES",
             "title": "Not residential",
             "desc": "",
@@ -7171,7 +7299,7 @@
             "params": ""
         },
         "COM": {
-            "prog": "1400",
+            "prog": "1200",
             "name": "COM",
             "title": "Commercial and public",
             "desc": "",
@@ -7182,7 +7310,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "MIX": {
-            "prog": "2800",
+            "prog": "2600",
             "name": "MIX",
             "title": "Mixed occupancy types",
             "desc": "MIX(RES;COM)",
@@ -7193,7 +7321,7 @@
             "params": ""
         },
         "IND": {
-            "prog": "2900",
+            "prog": "2700",
             "name": "IND",
             "title": "Industrial",
             "desc": "",
@@ -7204,7 +7332,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "AGR": {
-            "prog": "3600",
+            "prog": "3400",
             "name": "AGR",
             "title": "Agriculture",
             "desc": "",
@@ -7215,7 +7343,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "GOV": {
-            "prog": "4000",
+            "prog": "3800",
             "name": "GOV",
             "title": "Government",
             "desc": "",
@@ -7226,7 +7354,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "EDU": {
-            "prog": "4600",
+            "prog": "4400",
             "name": "EDU",
             "title": "Education",
             "desc": "",
@@ -7237,7 +7365,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "HEA": {
-            "prog": "5700",
+            "prog": "5500",
             "name": "HEA",
             "title": "Healthcare",
             "desc": "",
@@ -7248,7 +7376,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "TRT": {
-            "prog": "6800",
+            "prog": "6600",
             "name": "TRT",
             "title": "Transportation",
             "desc": "",
@@ -7259,7 +7387,7 @@
             "params": "{\"type\": \"options\",\n \"params_min\": 0,\n \"params_max\": 1}"
         },
         "OCO": {
-            "prog": "7200",
+            "prog": "7000",
             "name": "OCO",
             "title": "Other occupancy type",
             "desc": "",
@@ -7272,7 +7400,7 @@
         "XS": {
             "prog": "0",
             "name": "XS",
-            "title": "Micro-business (< 9 employees)",
+            "title": "Micro-establishment (< 9 employees)",
             "desc": "",
             "group": "size_category",
             "attr": "occupancy",
@@ -7283,7 +7411,7 @@
         "SS": {
             "prog": "100",
             "name": "SS",
-            "title": "Small business (10 - 49 employees)",
+            "title": "Small establishment (10 - 49 employees)",
             "desc": "",
             "group": "size_category",
             "attr": "occupancy",
@@ -7294,7 +7422,7 @@
         "MS": {
             "prog": "200",
             "name": "MS",
-            "title": "Medium business (50 - 249 employees)",
+            "title": "Medium establishment (50 - 249 employees)",
             "desc": "",
             "group": "size_category",
             "attr": "occupancy",
@@ -7305,7 +7433,7 @@
         "LS": {
             "prog": "300",
             "name": "LS",
-            "title": "Large business (> 250 employees)",
+            "title": "Large establishment (> 250 employees)",
             "desc": "",
             "group": "size_category",
             "attr": "occupancy",
