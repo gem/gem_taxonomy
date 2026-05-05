@@ -141,7 +141,7 @@ if __name__ == '__main__':
                                if row[ATOMSGROUP_TITL_IDX] == ''
                                else row[ATOMSGROUP_TITL_IDX])
             if row[ATOMSGROUP_NAME_IDX] != '':
-                atom_prog = 0
+                atom_progs = []
                 atomsgroup_prog += 100
                 tax['AtomsGroup'].append({
                     "prog": str(int(float(atomsgroup_prog))),
@@ -178,10 +178,19 @@ if __name__ == '__main__':
                     }
                 )
             else:
+                # print('Atom: %s, Prog: %s' % (atom_name, atom_prog))
                 if atom_prog == '':
-                    print('Tab: %s, Row: %s' %(sheet_name, idx),
+                    print('Tab: %s, Row: %s, Atom Name: %s: missing progressive number' %(
+                        sheet_name, idx, atom_name),
                           file=sys.stderr)
                     sys.exit(1)
+                elif atom_prog in atom_progs:
+                    print('Tab: %s, Row: %s, Atom Name: %s: progressive number already present' %(
+                        sheet_name, idx, atom_name), file=sys.stderr)
+                    sys.exit(1)
+
+                atom_progs.append(atom_prog)
+                    
                 tax['Atom'].append({
                     "prog": str(int(float(atom_prog))),
                     "name": atom_name,
