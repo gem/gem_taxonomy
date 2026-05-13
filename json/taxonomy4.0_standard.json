@@ -4129,16 +4129,6 @@
             "LFLS",
             "LFLSINF"
         ],
-        "PRO": [
-            "WOL",
-            "WOM",
-            "WOS"
-        ],
-        "PNO": [
-            "WOL",
-            "WOM",
-            "WOS"
-        ],
         "TOR": [
             "_ARG"
         ],
