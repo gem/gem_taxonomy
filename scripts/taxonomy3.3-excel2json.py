@@ -8,6 +8,7 @@
 # https://www.gnu.org/licenses/agpl-3.0.en.html
 #
 
+import os
 import sys
 import json
 import pandas
@@ -49,6 +50,8 @@ ATOM_PARAMS_IDX = 10
 #  MAIN
 #
 if __name__ == '__main__':
+    taxonomy_vers = os.path.basename(sys.argv[0][18:][0:-14])
+
     tax = {
         '_comment': (
             'This file is licensed under Creative Commons Attribution'
@@ -63,7 +66,7 @@ if __name__ == '__main__':
     }
 
     #
-    #   Taxonomy v3.3
+    #   Taxonomy Specification File
     #
     infile_name = sys.argv[1]
 
@@ -80,6 +83,7 @@ if __name__ == '__main__':
     ref_found = False
     taxmod_atom_type = {}
     taxmod_atom_deps = {}
+    taxmod_atom_deny = {}
 
     attribute_prog = 0
     for row in rows:
@@ -89,6 +93,7 @@ if __name__ == '__main__':
             continue
 
         if row[ATTRIBUTE_ATOMSGROUP_TITL_IDX] == '':
+            print('summary analyses interrupted at line [%s]' % row)
             break
 
         if row[ATTRIBUTE_NAME_IDX] != '':
@@ -121,7 +126,7 @@ if __name__ == '__main__':
         atomsgroup_prog = -100
 
         name_found = False
-        for row in rows:
+        for idx, row in enumerate(rows):
             if not name_found:
                 if row[ATOM_TITL_IDX].lower() == 'atom title':
                     name_found = True
@@ -136,7 +141,7 @@ if __name__ == '__main__':
                                if row[ATOMSGROUP_TITL_IDX] == ''
                                else row[ATOMSGROUP_TITL_IDX])
             if row[ATOMSGROUP_NAME_IDX] != '':
-                atom_prog = 0
+                atom_progs = []
                 atomsgroup_prog += 100
                 tax['AtomsGroup'].append({
                     "prog": str(int(float(atomsgroup_prog))),
@@ -173,6 +178,19 @@ if __name__ == '__main__':
                     }
                 )
             else:
+                # print('Atom: %s, Prog: %s' % (atom_name, atom_prog))
+                if atom_prog == '':
+                    print('Tab: %s, Row: %s, Atom Name: %s: missing progressive number' %(
+                        sheet_name, idx, atom_name),
+                          file=sys.stderr)
+                    sys.exit(1)
+                elif atom_prog in atom_progs:
+                    print('Tab: %s, Row: %s, Atom Name: %s: progressive number already present' %(
+                        sheet_name, idx, atom_name), file=sys.stderr)
+                    sys.exit(1)
+
+                atom_progs.append(atom_prog)
+                    
                 tax['Atom'].append({
                     "prog": str(int(float(atom_prog))),
                     "name": atom_name,
@@ -194,10 +212,30 @@ if __name__ == '__main__':
                 taxmod_atom_type[atom_name] = atom_type
 
             if atom_deps:
-                taxmod_atom_deps[atom_name] = (
-                    [x.strip() for x in atom_deps.split(',')])
+                deps = (
+                    [x.strip() for x in atom_deps.split(',') if not x.startswith('-')])
+                if deps:
+                    taxmod_atom_deps[atom_name] = deps
+                denials_in = (
+                    [x.strip()[1:] for x in atom_deps.split(',') if x.startswith('-')])
+                if denials_in:
+                    atoms_cur = [x['name'] for x in tax['Atom']]
+                    atomsgroups_cur = [x['name'] for x in tax['AtomsGroup']]
+                    deny_atoms = []
+                    for denial_in in denials_in:
+                        if denial_in in atomsgroups_cur:
+                            deny_atoms += [x['name'] for x in tax['Atom'] if x['group'] == denial_in]
+                        elif denial_in == denial_in.upper():
+                            deny_atoms += [denial_in]
+                        else:
+                            print('Tab: %s, Row: %s, unknown AtomsGroup or Atom [%s]' %(
+                                sheet_name, idx, denial_in), file=sys.stderr)
+                            sys.exit(1)
+                    if deny_atoms:
+                        taxmod_atom_deny[atom_name] = deny_atoms
 
     tax['AtomType'] = taxmod_atom_type
+    tax['AtomsDeny'] = taxmod_atom_deny
     tax['AtomsDeps'] = taxmod_atom_deps
 
     new_dict = {}
@@ -206,5 +244,5 @@ if __name__ == '__main__':
             new_dict[k + 'Dict'] = {x['name']: x for x in tax[k]}
     tax.update(new_dict)
 
-    with open('json/taxonomy3.3_standard.json', 'w') as f:
+    with open('json/taxonomy%s_standard.json' % taxonomy_vers, 'w') as f:
         json.dump(tax, f, indent=4)
