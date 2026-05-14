@@ -2,7 +2,7 @@
 
 The GEM Building Taxonomy is a uniform classification scheme, a method for describing and categorising buildings in the same way across the globe as a key step towards assessing their vulnerability and risk. The taxonomy provides a language model that characterises assets according to attributes that can influence the likelihood of damage due to the effects of natural hazards.
 
-The `GEM Building taxonomy v4.0` contains 13 building attributes, including the main material of construction, lateral load-resisting system, date of construction and number of storeys. This repository provides the spreadsheets with the latest attributes.
+The `GEM Building taxonomy v4.0` contains 15 building attributes, including the main material of construction, lateral load-resisting system, earthquake resistance design, date of construction and number of storeys. This repository provides the spreadsheets with the latest attributes.
 
 [Taxonomy_tables_v4.0.xlsx](./Taxonomy_tables_v4.0.xlsx)
 
